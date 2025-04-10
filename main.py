@@ -1,4 +1,4 @@
-import hashlib
+import argparse
 import json
 import os
 import sys
@@ -16,75 +16,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
+from cache_decorator import file_cache_wrapper, remove_cache
+
 # region  Constants
 DISNEY_ATTRACTIONS_URL = "https://www.disneylandparis.com/en-gb/attractions/"
 PARSED_ATTRACTIONS_PATH = "data/parsed_attractions.json"
-CACHE_DIR = "cache"
 # endregion
 
 
-# region Decorators
-def file_cache_wrapper(func):
-    def wrapper(url, cache_dir=CACHE_DIR, max_age_hours=1):
-        """
-        Decorator to cache the HTML content of a URL using a file-based cache.
-        :param func: The function to wrap.
-        :param url: The URL to fetch.
-        :param cache_dir: The directory to store cached files.
-        :param max_age_days: The maximum age of the cache in days.
-        :return: The HTML content as a string.
-        """
-        # Create cache directory if it doesn't exist
-        if not os.path.exists(cache_dir):
-            os.makedirs(cache_dir)
-
-        # Create a filename based on the URL
-        url_hash = hashlib.md5(url.encode()).hexdigest()
-        cache_file = os.path.join(cache_dir, f"{url_hash}.json")
-
-        # Check if cache file exists and is less than a day old
-        if os.path.exists(cache_file):
-            with open(cache_file, "r", encoding="utf-8") as f:
-                try:
-                    cached_data = json.load(f)
-                    timestamp = cached_data.get("timestamp", 0)
-                    current_time = time.time()
-
-                    # Check if cache is still valid (less than max_age_days old)
-                    if current_time - timestamp < max_age_hours * 60 * 60:  # Convert hours to seconds
-                        print(f"Using cached content for {url}")
-                        return cached_data.get("html")
-                except json.JSONDecodeError:
-                    # If the JSON is corrupted, ignore the cache
-                    pass
-
-        # Cache miss or expired, call the original function
-        html_content = func(url)
-
-        # Save the result to cache if it's not None
-        if html_content is not None:
-            cache_data = {"timestamp": time.time(), "html": html_content}
-            with open(cache_file, "w", encoding="utf-8") as f:
-                json.dump(cache_data, f, ensure_ascii=False)
-
-        return html_content
-
-    return wrapper
-
-
-# endregion
-
-
-# region Utility Functions
-def get_soup(html_content):
-    return BeautifulSoup(html_content, "html.parser")
-
-
-# endregion
-
-# region Scraping
-
-
+# region Scraping - List
 @lru_cache(maxsize=128)
 @file_cache_wrapper
 def get_html_single(url: str, wait_selector: str = "body", timeout: int = 10) -> str | None:
@@ -131,7 +71,7 @@ def parse_attraction_lists(html: str) -> list[dict]:
     """
     print("Parsing HTML content...")
 
-    soup = get_soup(html)
+    soup = BeautifulSoup(html, "html.parser")
 
     # Attraction lists have the class `card-list`
     # Usually there is one list for open and one for closed attractions
@@ -226,7 +166,21 @@ def main():
     Main function to fetch and parse attraction data from Disneyland Paris.
     """
 
+    parser = argparse.ArgumentParser(description="Fetch and parse Disneyland Paris attraction data.")
+    parser.add_argument(
+        "--clean", action="store_true", help="Remove existing parsed data and cached files before running."
+    )
+    args = parser.parse_args()
+
     try:
+        if args.clean and os.path.exists(PARSED_ATTRACTIONS_PATH):
+            os.remove(PARSED_ATTRACTIONS_PATH)
+            print(f"Removed existing file: {PARSED_ATTRACTIONS_PATH}")
+
+        if args.clean and os.path.exists("cache"):
+            remove_cache()
+            print("Removed existing cache files.")
+
         # Fetch the HTML content
         html_content = get_html_single(DISNEY_ATTRACTIONS_URL)
 
@@ -239,9 +193,7 @@ def main():
         attractions = parse_attraction_lists(html_content)
 
         # Save the data to a JSON file
-        if not os.path.exists(PARSED_ATTRACTIONS_PATH):
-            os.makedirs(os.path.dirname(PARSED_ATTRACTIONS_PATH), exist_ok=True)
-
+        os.makedirs(os.path.dirname(PARSED_ATTRACTIONS_PATH), exist_ok=True)
         with open(PARSED_ATTRACTIONS_PATH, "w", encoding="utf-8") as f:
             json.dump(attractions, f, ensure_ascii=False, indent=4)
 
@@ -250,7 +202,7 @@ def main():
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
-        print("Cleaning up...")
+        print("Script finished.")
 
 
 if __name__ == "__main__":
