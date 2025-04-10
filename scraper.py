@@ -1,0 +1,146 @@
+import concurrent.futures
+import queue
+import time
+from functools import lru_cache
+from threading import Lock
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
+
+from cache_decorator import file_cache_wrapper
+
+
+class BrowserPool:
+    def __init__(self, pool_size=5):
+        self.pool_size = pool_size
+        self.available_browsers = queue.Queue(pool_size)
+        self.lock = Lock()
+        self.initialized = False
+
+    def initialize(self):
+        if self.initialized:
+            return
+
+        with self.lock:
+            if not self.initialized:
+                for _ in range(self.pool_size):
+                    self.available_browsers.put(self._create_browser())
+                self.initialized = True
+
+    def _create_browser(self):
+        options = Options()
+        options.add_argument("--headless=new")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument(
+            "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        )
+
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        driver.execute_cdp_cmd(
+            "Page.addScriptToEvaluateOnNewDocument",
+            {
+                "source": """
+                Object.defineProperty(navigator, 'webdriver', {
+                  get: () => undefined
+                });
+                """
+            },
+        )
+        return driver
+
+    def get_browser(self):
+        if not self.initialized:
+            self.initialize()
+        return self.available_browsers.get()
+
+    def return_browser(self, browser):
+        try:
+            self.available_browsers.put(browser, block=False)
+        except queue.Full:
+            browser.quit()
+
+
+# Create a global browser pool
+browser_pool = BrowserPool(pool_size=5)
+
+
+@lru_cache(maxsize=128)
+@file_cache_wrapper
+def get_html_single_cached(url: str, wait_selector: str = "body", timeout: int = 10) -> str | None:
+    return get_html_single(url, wait_selector, timeout)
+
+
+def get_html_single(url: str, wait_selector: str = "body", timeout: int = 10) -> str | None:
+    """
+    Fetch HTML from a single URL using the browser pool
+    :param url: URL to fetch
+    :param wait_selector: CSS selector to wait for
+    :param timeout: Maximum time to wait for the selector
+    :return: HTML content as a string or None if an error occurs
+    """
+    print(f"Fetching {url}...")
+
+    browser = None
+    try:
+        browser = browser_pool.get_browser()
+        browser.get(url)
+        WebDriverWait(browser, timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, wait_selector)))
+        time.sleep(1)  # Slight delay for dynamic content to load
+        return browser.page_source
+    except Exception as e:
+        print(f"Error fetching {url}: {e}")
+        # If there's an error with the browser, don't return it to the pool
+        if browser:
+            try:
+                browser.quit()
+            except:
+                pass
+            browser = None
+        return None
+    finally:
+        if browser:
+            browser_pool.return_browser(browser)
+
+
+def get_html_multiple(urls: list, wait_selector: str = "body", timeout: int = 10, max_workers: int = 5) -> dict:
+    """
+    Fetch HTML from multiple URLs concurrently using the browser pool
+
+    Args:
+        urls: List of URLs to fetch
+        wait_selector: CSS selector to wait for
+        timeout: Maximum time to wait for the selector
+        max_workers: Maximum number of concurrent workers
+
+    Returns:
+        Dictionary mapping URLs to their HTML content
+    """
+    results = {}
+
+    # Initialize the browser pool if not already done
+    browser_pool.initialize()
+
+    # Use a smaller number of workers than the pool size to avoid exhaustion
+    max_workers = min(max_workers, browser_pool.pool_size)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_url = {executor.submit(get_html_single, url, wait_selector, timeout): url for url in urls}
+
+        for future in concurrent.futures.as_completed(future_to_url):
+            url = future_to_url[future]
+            try:
+                html = future.result()
+                results[url] = html
+            except Exception as e:
+                print(f"Exception processing {url}: {e}")
+                results[url] = None
+
+    return results
