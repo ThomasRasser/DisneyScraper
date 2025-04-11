@@ -4,7 +4,7 @@ import os
 import sys
 import time
 
-from cache_decorator import remove_cache
+from cache_decorator import remove_complete_cache
 from parser import parse_disneyland_attraction_details, parse_disneyland_attraction_lists, parse_disneyland_dining_lists
 from scraper import get_html_multiple_cached, get_html_single_cached
 
@@ -17,6 +17,7 @@ PARSED_DINING_PATH = "data/parsed_dining.json"
 # endregion
 
 
+# region Scraping Functions
 def scrape_disneyland_attraction_lists() -> list:
     """
     Scrape Disneyland Paris attraction data and save it to a JSON file.
@@ -105,6 +106,9 @@ def scrape_disneyland_attractions_details() -> list:
     print(f"Detailed data saved to {detailed_attractions_path}.")
 
 
+# endregion
+
+
 # region Main
 def main():
     """
@@ -121,7 +125,7 @@ def main():
         if args.clean and os.path.exists(PARSED_ATTRACTIONS_PATH):
             os.remove(PARSED_ATTRACTIONS_PATH)
             print(f"Removed existing file: {PARSED_ATTRACTIONS_PATH}")
-            remove_cache()
+            remove_complete_cache()
 
         scrape_disneyland_attraction_lists()
         scrape_disneyland_dining_lists()

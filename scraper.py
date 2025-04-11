@@ -2,6 +2,7 @@ import concurrent.futures
 import queue
 import time
 from functools import lru_cache
+from pathlib import Path
 from threading import Lock
 
 from selenium import webdriver
@@ -12,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-from cache_decorator import file_cache_wrapper
+from cache_decorator import file_cache_wrapper_url_fetch
 
 
 class BrowserPool:
@@ -72,38 +73,48 @@ class BrowserPool:
 browser_pool = BrowserPool(pool_size=5)
 
 
+def scroll_and_wait_for_images(browser, timeout=10, pause=0.75, max_scrolls=50):
+    for _ in range(max_scrolls):
+        browser.execute_script("window.scrollBy(0, window.innerHeight);")
+        time.sleep(pause)
+        browser.execute_script("window.scrollBy(0, -100);")  # Trigger loading for some buggy lazy-loaders
+        time.sleep(0.2)
+
+    WebDriverWait(browser, timeout).until(
+        lambda d: d.execute_script("""
+        return Array.from(document.images).every(
+            img => img.complete && img.naturalWidth > 0
+        )
+    """)
+    )
+
+
 @lru_cache(maxsize=128)
-@file_cache_wrapper
+@file_cache_wrapper_url_fetch
 def get_html_single_cached(url: str, wait_selector: str = "body", timeout: int = 10) -> str | None:
     return get_html_single(url, wait_selector, timeout)
 
 
 def get_html_single(url: str, wait_selector: str = "body", timeout: int = 10) -> str | None:
-    """
-    Fetch HTML from a single URL using the browser pool
-    :param url: URL to fetch
-    :param wait_selector: CSS selector to wait for
-    :param timeout: Maximum time to wait for the selector
-    :return: HTML content as a string or None if an error occurs
-    """
     print(f"Fetching {url}...")
-
     browser = None
+
     try:
         browser = browser_pool.get_browser()
         browser.get(url)
+
         WebDriverWait(browser, timeout).until(EC.presence_of_element_located((By.CSS_SELECTOR, wait_selector)))
-        time.sleep(1)  # Slight delay for dynamic content to load
+
+        scroll_and_wait_for_images(browser, timeout)
+
         return browser.page_source
     except Exception as e:
         print(f"Error fetching {url}: {e}")
-        # If there's an error with the browser, don't return it to the pool
         if browser:
             try:
                 browser.quit()
             except:
                 pass
-            browser = None
         return None
     finally:
         if browser:
