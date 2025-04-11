@@ -110,7 +110,13 @@ def get_html_single(url: str, wait_selector: str = "body", timeout: int = 10) ->
             browser_pool.return_browser(browser)
 
 
-def get_html_multiple(urls: list, wait_selector: str = "body", timeout: int = 10, max_workers: int = 5) -> dict:
+def get_html_multiple_cached(urls: list, wait_selector: str = "body", timeout: int = 10, max_workers: int = 5) -> dict:
+    return get_html_multiple(urls, wait_selector, timeout, max_workers, get_html_single_cached)
+
+
+def get_html_multiple(
+    urls: list, wait_selector: str = "body", timeout: int = 10, max_workers: int = 5, scrape_function=get_html_single
+) -> dict:
     """
     Fetch HTML from multiple URLs concurrently using the browser pool
 
@@ -132,7 +138,7 @@ def get_html_multiple(urls: list, wait_selector: str = "body", timeout: int = 10
     max_workers = min(max_workers, browser_pool.pool_size)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_url = {executor.submit(get_html_single, url, wait_selector, timeout): url for url in urls}
+        future_to_url = {executor.submit(scrape_function, url, wait_selector, timeout): url for url in urls}
 
         for future in concurrent.futures.as_completed(future_to_url):
             url = future_to_url[future]

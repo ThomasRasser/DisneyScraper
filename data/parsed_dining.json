@@ -1,0 +1,680 @@
+[
+    {
+        "title": "Agrabah Café Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/agrabah-cafe/",
+        "image": "https://media.disneylandparis.com/d4th/en-gb/images/n017738_2050jan01_agrabah-cafe_1-1_tcm752-158799.jpg?w=360",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Middle Eastern",
+        "location": "Disneyland Park, Adventureland"
+    },
+    {
+        "title": "Annette’s Diner",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/annettes-diner/",
+        "image": "https://media.disneylandparis.com/d4th/en-gb/images/n017171_2028sep29_world_annettes-diner-restaurant-disney-village_1-1_tcm752-159659.jpg?w=360",
+        "keywords": "Table service",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Au Chalet de la Marionnette",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/au-chalet-de-la-marionnette/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​",
+        "price": "€",
+        "nationality": "German",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "Auberge de Cendrillon",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/auberge-de-cendrillon/",
+        "image": "",
+        "keywords": "Table service, Character Dining, Online bookings",
+        "price": "€€€",
+        "nationality": "French",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "Billy Bob's Country Western Saloon",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/billy-bobs-country-western-saloon/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Billy Bob’s Buffet",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/billy-bobs-buffet/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Tex Mex",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Bistrot Chez Rémy",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/bistrot-chez-remy/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€",
+        "nationality": "French",
+        "location": "Walt Disney Studios Park, Worlds of Pixar"
+    },
+    {
+        "title": "Bleecker Street Lounge",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-new-york/bleecker-street-lounge/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Hotel New York - The Art of Marvel"
+    },
+    {
+        "title": "Brasserie Rosalie",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/brasserie-rosalie/",
+        "image": "",
+        "keywords": "Table service",
+        "price": "€€",
+        "nationality": "French",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Cable Car Bake Shop",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cable-car-bake-shop/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "American",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "Café Hyperion",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cafe-hyperion/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​, Self-service kiosks",
+        "price": "€",
+        "nationality": "American",
+        "location": "Disneyland Park, Discoveryland"
+    },
+    {
+        "title": "Café de la Brousse",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cafe-de-la-brousse/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Adventureland"
+    },
+    {
+        "title": "Cape Cod",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-newport-bay-club/cape-cod/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Fish specialities",
+        "location": "Disney Newport Bay Club"
+    },
+    {
+        "title": "Captain Jack's - Restaurant des Pirates",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/captain-jacks-restaurant-pirates/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€€",
+        "nationality": "Caribbean",
+        "location": "Disneyland Park, Adventureland"
+    },
+    {
+        "title": "Captain’s Quarters",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-newport-bay-club/captains-quarters/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Newport Bay Club"
+    },
+    {
+        "title": "Casa de Coco – Restaurante de Familia",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/casa-de-coco-restaurante-de-familia/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​",
+        "price": "€",
+        "nationality": "Tex Mex",
+        "location": "Disneyland Park, Frontierland"
+    },
+    {
+        "title": "Casey’s Corner",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/caseys-corner/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​",
+        "price": "€",
+        "nationality": "American",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "Character Dining at Plaza Gardens Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/character-dining-at-plaza-gardens/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Character Dining, Online bookings",
+        "price": "€€€",
+        "nationality": "French",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "Chuck Wagon Café",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-cheyenne/chuck-wagon-cafe/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Tex Mex",
+        "location": "Disney Hotel Cheyenne"
+    },
+    {
+        "title": "Colonel Hathi’s Outpost Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/colonel-hathis-pizza-outpost/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "Indian",
+        "location": "Disneyland Park, Adventureland"
+    },
+    {
+        "title": "Cookie Kitchen",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cookie-kitchen/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "Cool Post",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cool-post/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Adventureland"
+    },
+    {
+        "title": "Cool Station",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cool-station/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Discoveryland"
+    },
+    {
+        "title": "Cowboy Cookout Barbecue",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/cowboy-cookout-barbecue/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​",
+        "price": "€",
+        "nationality": "Tex Mex",
+        "location": "Disneyland Park, Frontierland"
+    },
+    {
+        "title": "Critter Corral",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/critter-corral/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Snacks and sweet treats",
+        "location": "Disneyland Park, Frontierland"
+    },
+    {
+        "title": "Crockett’s Saloon",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-davy-crockett-ranch/crocketts-saloon/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Davy Crockett Ranch"
+    },
+    {
+        "title": "Crockett’s Tavern",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-davy-crockett-ranch/davy-crocketts-tavern/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Tex Mex",
+        "location": "Disney Davy Crockett Ranch"
+    },
+    {
+        "title": "Downtown Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-new-york/downtown-restaurant/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Disney Hotel New York - The Art of Marvel"
+    },
+    {
+        "title": "Earl of Sandwich",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/earl-of-sandwich/",
+        "image": "",
+        "keywords": "Prices Vary",
+        "price": "Disney Village",
+        "location": ""
+    },
+    {
+        "title": "FAN-tastic Food Truck",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/fantastic/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "American",
+        "location": "Walt Disney Studios Park, Avengers Campus"
+    },
+    {
+        "title": "Five Guys",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/five-guys/",
+        "image": "",
+        "keywords": "Prices Vary",
+        "price": "Disney Village",
+        "location": ""
+    },
+    {
+        "title": "Fleur de Lys",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-hotel/fleur-de-lys-bar-ref/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "€€€",
+        "location": "Disneyland Hotel"
+    },
+    {
+        "title": "Hunter's Grill",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-sequoia-lodge/hunters-grill/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Disney Sequoia Lodge"
+    },
+    {
+        "title": "Ice Cream Creations",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/ice-cream-creations/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Ice Creams",
+        "location": "Walt Disney Studios Park, Production Courtyard"
+    },
+    {
+        "title": "L'Arbre Enchanté",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/l-arbre-enchante/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "La Cantina",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-santa-fe/la-cantina/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Tex Mex",
+        "location": "Disney Hotel Santa Fe"
+    },
+    {
+        "title": "La Forêt Secrète par Jean Imbert",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-hotel/la-foret-secrete-ref/",
+        "image": "",
+        "keywords": "Table service",
+        "price": "€€€",
+        "nationality": "French",
+        "location": "Disneyland Hotel"
+    },
+    {
+        "title": "La Grange [at Billy Bob's Country Western Saloon]",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/la-grange-at-billy-bobs-country-western-saloon/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "Tex Mex",
+        "location": "Disney Village"
+    },
+    {
+        "title": "La Table de Lumière",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-hotel/la-table-de-lumiere-ref/",
+        "image": "",
+        "keywords": "Table service, Character Dining, Online bookings",
+        "price": "€€€",
+        "nationality": "French",
+        "location": "Disneyland Hotel"
+    },
+    {
+        "title": "Last Chance Cafe",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/last-chance-cafe/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​",
+        "price": "€",
+        "nationality": "Tex Mex",
+        "location": "Disneyland Park, Frontierland"
+    },
+    {
+        "title": "Laugh’N' Go!",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/laugh-n-go/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "American",
+        "location": "Walt Disney Studios Park, Worlds of Pixar"
+    },
+    {
+        "title": "Le Comptoir",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/comptoir-rosalie/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€€",
+        "nationality": "French",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Manhattan Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-new-york/manhattan-restaurant/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€€",
+        "nationality": "Italian",
+        "location": "Disney Hotel New York - The Art of Marvel"
+    },
+    {
+        "title": "March Hare Refreshments",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/march-hare-refreshments/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "Market House Deli",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/market-house-deli/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "French",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "McDonald’s",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/mcdonalds/",
+        "image": "",
+        "keywords": "€",
+        "price": "Disney Village",
+        "location": ""
+    },
+    {
+        "title": "PYM Kitchen",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/pymkitchen/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Walt Disney Studios Park, Avengers Campus"
+    },
+    {
+        "title": "Petite Rosalie",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/petite-rosalie/",
+        "image": "",
+        "keywords": "Table service",
+        "price": "€€",
+        "nationality": "French",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Pizzeria Bella Notte",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/pizzeria-bella-notte/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "Italian",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "Plaza Gardens Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/plaza-gardens-restaurant/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "French",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "Rainforest Café",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/rainforest-cafe/",
+        "image": "",
+        "keywords": "Table service",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Red Garter Saloon",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-cheyenne/red-garter-saloon/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Hotel Cheyenne"
+    },
+    {
+        "title": "Redwood Bar and Lounge",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-sequoia-lodge/redwood-bar-and-lounge/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Sequoia Lodge"
+    },
+    {
+        "title": "Restaurant Hakuna Matata",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/restaurant-hakuna-matata/",
+        "image": "",
+        "keywords": "Quick Service Restaurant, Click & Collect​",
+        "price": "€",
+        "nationality": "African",
+        "location": "Disneyland Park, Adventureland"
+    },
+    {
+        "title": "Rio Grande Bar",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-santa-fe/rio-grande-bar/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Hotel Santa Fe"
+    },
+    {
+        "title": "Rocket Café",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/rocket-cafe/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Snacks and sweet treats",
+        "location": "Disneyland Park, Discoveryland"
+    },
+    {
+        "title": "Royal Banquet",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-hotel/royal-banquet-ref/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Character Dining, Online bookings",
+        "price": "€€€",
+        "nationality": "French",
+        "location": "Disneyland Hotel"
+    },
+    {
+        "title": "Silver Spur Steakhouse",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/silver-spur-steakhouse/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€",
+        "nationality": "BBQ & Steakhouse",
+        "location": "Disneyland Park, Frontierland"
+    },
+    {
+        "title": "Skyline Bar",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-hotel-new-york/skyline-bar/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disney Hotel New York - The Art of Marvel"
+    },
+    {
+        "title": "Speciality Ice Cream",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/speciality-ice-cream/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Ice Creams",
+        "location": "Walt Disney Studios Park, Production Courtyard"
+    },
+    {
+        "title": "Starbucks Coffee",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/starbucks-coffee/",
+        "image": "",
+        "keywords": "Prices Vary",
+        "price": "Disney Village",
+        "location": ""
+    },
+    {
+        "title": "Stark Factory",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/starkfactory/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "Italian",
+        "location": "Walt Disney Studios Park, Avengers Campus"
+    },
+    {
+        "title": "The Gibson Girl Ice Cream Parlour",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/gibson-girl-ice-cream-parlour/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Ice Creams",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "The Ice Cream Company",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/ice-cream-company/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Ice Creams",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "The Lucky Nugget Saloon",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/lucky-nugget-saloon/",
+        "image": "",
+        "keywords": "Table service",
+        "price": "€",
+        "nationality": "American",
+        "location": "Disneyland Park, Frontierland"
+    },
+    {
+        "title": "The Old Mill",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/the-old-mill/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "The Royal Pub",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/the-royal-pub/",
+        "image": "",
+        "keywords": "Bars, Table service",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Disney Village"
+    },
+    {
+        "title": "The Steakhouse",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/steakhouse/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€€",
+        "nationality": "BBQ & Steakhouse",
+        "location": "Disney Village"
+    },
+    {
+        "title": "Toad Hall Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/toad-hall-restaurant/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "Fish specialities",
+        "location": "Disneyland Park, Fantasyland"
+    },
+    {
+        "title": "Toon Studio Catering Co.",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/toon-studio-catering-co/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Walt Disney Studios Park, Toon Studio"
+    },
+    {
+        "title": "Vapiano",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disney-village/vapiano/",
+        "image": "",
+        "keywords": "€",
+        "price": "Disney Village",
+        "location": ""
+    },
+    {
+        "title": "Victoria’s Home-Style Restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/victorias-home-style-restaurant/",
+        "image": "",
+        "keywords": "Bars",
+        "price": "Prices Vary",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "WEB Food Truck",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/webfoodtruck/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "nationality": "Asian",
+        "location": "Walt Disney Studios Park, Avengers Campus"
+    },
+    {
+        "title": "Walt’s – an American restaurant",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/walts-american-restaurant/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€€",
+        "nationality": "American",
+        "location": "Disneyland Park, Main Street U.S.A."
+    },
+    {
+        "title": "Yacht Club",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-newport-bay-club/yacht-club-restaurant/",
+        "image": "",
+        "keywords": "Table service, Online bookings",
+        "price": "€€€",
+        "nationality": "Fish specialities",
+        "location": "Disney Newport Bay Club"
+    },
+    {
+        "title": "Beaver Creek Tavern",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneys-sequoia-lodge/beaver-creek-tavern/",
+        "image": "",
+        "keywords": "All-you-can-eat buffet, Online bookings",
+        "price": "€€",
+        "nationality": "American",
+        "location": "Disney Sequoia Lodge"
+    },
+    {
+        "title": "Super Diner",
+        "link": "https://www.disneylandparis.com/en-gb/dining/walt-disney-studios-park/superdiner/",
+        "image": "",
+        "keywords": "Quick Service Restaurant",
+        "price": "€",
+        "nationality": "American",
+        "location": "Walt Disney Studios Park, Avengers Campus"
+    },
+    {
+        "title": "The Coffee Grinder",
+        "link": "https://www.disneylandparis.com/en-gb/dining/disneyland-park/coffee-grinder/",
+        "image": "",
+        "keywords": "On-the-go",
+        "price": "€",
+        "location": "Disneyland Park, Main Street U.S.A."
+    }
+]
