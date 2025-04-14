@@ -4,17 +4,18 @@ from pathlib import Path
 ROOT_DIR = "/home/thomas/desktop/tu/10_Semester/7_Advanced_Software_Engineering_ASE/2_Webscraper/1_Disney_Scraper"
 
 # Scrapgin Disneyland Paris
-THOMAS_RASSER_URL = "https://rasser.derthomas.at/Autohaus/index.html"
 DISNEY_ATTRACTIONS_URL = "https://www.disneylandparis.com/en-gb/attractions/"
 PARSED_ATTRACTIONS_PATH = Path(ROOT_DIR) / "data" / "parsed_attractions.json"
 DISNEY_DINING_URL = "https://www.disneylandparis.com/en-gb/dining/"
 PARSED_DINING_PATH = Path(ROOT_DIR) / "data" / "parsed_dining.json"
+PARSED_ATTRACTIONS_DETAIL_PATH = Path(ROOT_DIR) / "data" / "parsed_attractions_detail.json"
+PARSED_DINING_DETAIL_PATH = Path(ROOT_DIR) / "data" / "parsed_dining_detail.json"
 
 # OpenStreetMap (OSM)
 OSM_URL = "https://overpass-api.de/api/interpreter"
 OSM_HEADERS = {"Content-Type": "application/x-www-form-urlencoded"}
 OSM_DATA = {"data": '[out:json][timeout:60];area["name"="Disneyland Paris"]->.a;(way(area.a););(._;>;);out body;'}
-DISNEY_NODES_PATH = Path(ROOT_DIR) / "data" / "osm_disneyland_paris_nodes.json"
+OSM_DISNEY_NODES_PATH = Path(ROOT_DIR) / "data" / "osm_disneyland_paris_nodes.json"
 OSM_ATTRACTION_DISTANCES_PATH = Path(ROOT_DIR) / "data" / "osm_disneyland_paris_attraction_distances.json"
 
 # Queue Times (QT)
@@ -61,7 +62,7 @@ DISNEYLAND_LON = 2.78347
 # OpenAPI
 OPEN_API_KEY_ENV = "OPEN_API_KEY"  # Environment variable
 OPEN_API_URL = "https://api.openai.com/v1/chat/completions"
-OPEN_API_MODEL = "gpt-3.5-turbo"
+OPEN_API_MODEL = "gpt-3.5-turbo"  # "gpt-4" or "gpt-3.5-turbo"
 OPEN_API_RESPONSE_PATH = Path(ROOT_DIR) / "data" / "open_api_response.json"
 
 

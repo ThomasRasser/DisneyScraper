@@ -3,7 +3,7 @@ import os
 from functools import lru_cache
 
 from utils.constants import (
-    DISNEY_NODES_PATH,
+    OSM_DISNEY_NODES_PATH,
     clean_path,
 )
 
@@ -38,8 +38,8 @@ def load_osm_data() -> list:
     Load the OpenStreetMap data from the JSON file.
     :return: OSM data as a list of elements.
     """
-    print(f"Loading OSM data from {clean_path(DISNEY_NODES_PATH)}")
-    osm_data = load_json_data_cached(DISNEY_NODES_PATH)
+    print(f"Loading OSM data from {clean_path(OSM_DISNEY_NODES_PATH)}")
+    osm_data = load_json_data_cached(OSM_DISNEY_NODES_PATH)
 
     if not osm_data:
         print("No elements found in OSM data.")

@@ -9,7 +9,7 @@ from utils.constants import CACHE_DIR
 
 
 def file_cache_wrapper_url_fetch(func):
-    def wrapper(*args, cache_dir=CACHE_DIR, max_age_hours=1, **kwargs):
+    def wrapper(*args, cache_dir=CACHE_DIR, max_age_hours=72, **kwargs):
         """
         Decorator to cache the HTML content of a URL using a file-based cache.
         Assumes the first positional arg or 'url' kwarg is the URL.
@@ -32,7 +32,9 @@ def file_cache_wrapper_url_fetch(func):
 
                     # Check if cache is still valid (less than max_age_days old)
                     if current_time - timestamp < max_age_hours * 60 * 60:  # Convert hours to seconds
-                        print(f"Using cached content for {url}")
+                        clamped_url = url[:97] + "..." if len(url) > 100 else url
+                        parsed_url = clamped_url.replace("\n", "")
+                        print(f"Using cached content for {parsed_url}")
                         return cached_data.get("html")
                 except json.JSONDecodeError:
                     # If the JSON is corrupted, ignore the cache

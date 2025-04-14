@@ -10,10 +10,12 @@ from utils.cache_decorator import (
     remove_cache_for_url,
 )
 from utils.constants import (
-    DISNEY_NODES_PATH,
     FINAL_COMBINED_ATTRACTIONS_PATH,
+    FINAL_COMBINED_DINING_PATH,
+    GM_ATTRACTIONS_PATH,
     OSM_ATTRACTION_DISTANCES_PATH,
     OSM_DATA,
+    OSM_DISNEY_NODES_PATH,
     OSM_HEADERS,
     OSM_URL,
     clean_path,
@@ -42,7 +44,9 @@ def fetch_osm_data(url: str, osm_url: str = OSM_URL, headers: dict = OSM_HEADERS
 
     response = requests.post(osm_url, headers=headers, data=data)
     if response.status_code == 200:
-        return response.json()
+        osm_data = response.json()
+        osm_nodes = osm_data.get("elements", [])
+        return osm_nodes
     else:
         print(f"Error fetching data: {response.status_code}")
         return None
@@ -73,6 +77,61 @@ def find_closest_node(latitude: float, longitude: float, nodes: list) -> dict | 
     return closest_node
 
 
+def create_all_files_and_merge(clean: bool = False) -> None:
+    """
+    Does the scraping and creates all files necessary for the final combined data.
+    and merges them into the combined data file.
+
+    Expected that the `FINAL_COMBINED_ATTRACTIONS` file exists
+    and has been populated with the scraped data.
+
+    :clean: If True, dont use cached data.
+    """
+    assert os.path.exists(FINAL_COMBINED_ATTRACTIONS_PATH), f"File not found: {FINAL_COMBINED_ATTRACTIONS_PATH}"
+
+    # Fetch osm data
+    full_osm_url = f"{OSM_URL}?{OSM_DATA['data']}"
+    if clean:
+        if os.path.exists(OSM_DISNEY_NODES_PATH):
+            os.remove(OSM_DISNEY_NODES_PATH)
+        print(f"Removed existing file: {clean_path(OSM_DISNEY_NODES_PATH)}")
+
+        remove_cache_for_url(full_osm_url)
+        print(f"Removed cache for URL: {OSM_URL}")
+
+    osm_data = fetch_osm_data(full_osm_url)
+    osm_nodes = osm_data.get("elements", [])
+    save_json_data(osm_data, OSM_DISNEY_NODES_PATH)
+
+    # The data can only be merged, once the google maps data is available
+    print("Merging data OSM data based on Google Maps data...")
+    changes = 0
+    final_attractions = load_json_data(FINAL_COMBINED_ATTRACTIONS_PATH)
+    for attraction in final_attractions:
+        latitude = attraction.get("gm_lat", None)
+        longitude = attraction.get("gm_lon", None)
+        if latitude is None or longitude is None:
+            print("No latitude or longitude found in attraction data: ", attraction)
+            continue
+
+        closest_node = find_closest_node(latitude, longitude, osm_nodes)
+        if closest_node is None:
+            print(f"No closest node found for {attraction['name']}.")
+            continue
+
+        attraction["osm_node_id"] = closest_node.get("id", None)
+        attraction["osm_lat"] = closest_node.get("lat", None)
+        attraction["osm_lon"] = closest_node.get("lon", None)
+        changes += 1
+
+    # Save the merged data
+    if changes == 0:
+        print("No changes made to the attractions data.")
+        return
+
+    save_json_data(final_attractions, FINAL_COMBINED_ATTRACTIONS_PATH)
+
+
 # endregion
 
 
@@ -100,14 +159,9 @@ def main():
     args = parser.parse_args()
 
     try:
-        full_osm_url = f"{OSM_URL}?{OSM_DATA['data']}"
-        if args.clean:
-            if os.path.exists(DISNEY_NODES_PATH):
-                os.remove(DISNEY_NODES_PATH)
-            print(f"Removed existing file: {clean_path(DISNEY_NODES_PATH)}")
-
-            remove_cache_for_url(full_osm_url)
-            print(f"Removed cache for URL: {OSM_URL}")
+        if args.fetch:
+            create_all_files_and_merge(clean=args.clean)
+            print("Disneyland Paris data scraping completed successfully.")
 
         if args.close:
             osm_nodes = load_osm_data()
@@ -142,10 +196,6 @@ def main():
                 attraction_distances,
                 OSM_ATTRACTION_DISTANCES_PATH,
             )
-
-        if args.fetch:
-            data = fetch_osm_data(full_osm_url)
-            save_json_data(data, DISNEY_NODES_PATH)
 
     except KeyboardInterrupt:
         print("Process interrupted by user.")

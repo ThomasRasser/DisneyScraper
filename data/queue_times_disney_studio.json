@@ -7,30 +7,30 @@
                 {
                     "id": 10848,
                     "name": "Avengers Assemble: Flight Force",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 10,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 10849,
                     "name": "Avengers Assemble: Flight Force Single Rider",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 10845,
                     "name": "Spider-Man W.E.B. Adventure",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 30,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 10846,
                     "name": "Spider-Man W.E.B. Adventure Single Rider",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 }
             ]
         },
@@ -43,14 +43,14 @@
                     "name": "Meet Spider Man",
                     "is_open": false,
                     "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 40,
                     "name": "The Twilight Zone Tower of Terror",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 35,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 }
             ]
         },
@@ -63,91 +63,91 @@
                     "name": "Art of Disney Animation",
                     "is_open": false,
                     "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 31,
                     "name": "Cars Quatre Roues Rallye",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 29,
                     "name": "Cars ROAD TRIP",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 32,
                     "name": "Crush's Coaster",
                     "is_open": false,
                     "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 7277,
                     "name": "Crush's Coaster Single Rider",
                     "is_open": false,
                     "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 33,
                     "name": "Les Tapis Volants - Flying Carpets Over Agrabah®",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 37,
                     "name": "Ratatouille : L’Aventure Totalement Toquée de Rémy​",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 35,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 7279,
                     "name": "Ratatouille: The Adventure Single Rider",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 34,
                     "name": "RC Racer",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 30,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 7280,
                     "name": "RC Racer Single Rider",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 25,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 36,
                     "name": "Slinky® Dog Zigzag Spin",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 5,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 35,
                     "name": "Toy Soldiers Parachute Drop",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 50,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 },
                 {
                     "id": 7281,
                     "name": "Toy Soldiers Parachute Drop Single Rider",
-                    "is_open": false,
-                    "wait_time": 0,
-                    "last_updated": "2025-04-13T19:50:04.000Z"
+                    "is_open": true,
+                    "wait_time": 15,
+                    "last_updated": "2025-04-14T16:20:05.000Z"
                 }
             ]
         }

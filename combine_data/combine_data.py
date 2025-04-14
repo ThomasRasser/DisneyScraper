@@ -31,96 +31,6 @@ from utils.utils import (
 )
 
 
-def add_qt_to_final_ride_combination(qt_rides: dict, final_attractions: list) -> None:
-    """
-    Find the overlap between Queue Times rides and scraped Disneyland attractions.
-    Use scraped attractions as ground truth -> if a ride is not found in the scraped data,
-    it is not a ride and can be ignored.
-    :param qt_rides: Dictionary of rides from Queue Times.
-    :param attractions: List of attractions from Disneyland.
-    :return: List of overlapping rides.
-    """
-    print("Finding overlap between Queue Times and Disneyland attractions")
-
-    overlapping_ride_names = []
-    not_overlapping_ride_names = []
-
-    scrape_attraction_names = set()
-    for attraction in final_attractions:
-        if "name" in attraction:
-            scrape_attraction_names.add(attraction["name"])
-
-    qt_attraction_names = set(qt_rides.keys())
-
-    for final_attraction in final_attractions:
-        if final_attraction["name"] in qt_attraction_names:
-            final_attraction["qt_id"] = qt_rides[final_attraction["name"]]["id"]
-            final_attraction["qt_name"] = final_attraction["name"]
-            overlapping_ride_names.append(final_attraction["name"])
-        else:
-            not_overlapping_ride_names.append(final_attraction["name"])
-
-    print(f"Found {len(overlapping_ride_names)} overlapping rides.")
-    print(f"Found {len(not_overlapping_ride_names)} not overlapping rides.")
-    print(f"Not overlapping rides: {not_overlapping_ride_names}")
-    print("--------------------")
-
-    # Try to find the best match for the not overlapping rides
-    # via levenstein distance
-    for not_overlapping_scrape_name in not_overlapping_ride_names:
-        best_match = None
-        best_distance = float("inf")
-        for qt_name in qt_attraction_names:
-            distance = levenstein_distance_case_insensitive(not_overlapping_scrape_name, qt_name)
-            if distance < best_distance:
-                best_match = qt_name
-                best_distance = distance
-
-        if best_match:
-            print(f"Best match for '{not_overlapping_scrape_name}' is '{best_match}' with distance {best_distance}.")
-            if best_distance < 3:
-                final_attraction = next(
-                    (a for a in final_attractions if a["name"] == not_overlapping_scrape_name), None
-                )
-                if final_attraction:
-                    final_attraction["qt_id"] = qt_rides[best_match]["id"]
-                    final_attraction["qt_name"] = best_match
-                    print(f"Added '{best_match}' to final attractions.")
-
-                overlapping_ride_names.append(best_match)
-                not_overlapping_ride_names.remove(not_overlapping_scrape_name)
-                print(f"Added '{best_match}' to overlapping rides.")
-    print("--------------------")
-
-    # Try to find the best match for the not overlapping rides
-    # via matching words count
-    for not_overlapping_scrape_name in not_overlapping_ride_names:
-        best_match = None
-        best_count = 0
-        for qt_name in qt_attraction_names:
-            count = matching_words_count(not_overlapping_scrape_name, qt_name)
-            if count > best_count:
-                best_match = qt_name
-                best_count = count
-
-        if best_match:
-            print(f"Best match for '{not_overlapping_scrape_name}' is '{best_match}' with {best_count} words.")
-        else:
-            print(f"No match found for '{not_overlapping_scrape_name}'.")
-
-    # NOTE:
-    # We dont have queue times data for the attractions:
-    # - 'La Galerie de la Belle au Bois Dormant'
-    # - 'Liberty Arcade'.
-    # - 'Discovery Arcade'.
-    # - 'Horse-Drawn Streetcars'.
-    # - 'Sleeping Beauty Castle'.
-    # But as far as I can tell, they are not rides, so we can ignore them.
-
-    # Save the combined data
-    save_json_data(final_attractions, FINAL_COMBINED_ATTRACTIONS_PATH)
-
-
 def combine_scraped_disneyland_and_google_maps_data(final_attractions: list) -> None:
     """
     Combine the scraped Disneyland attractions data with Google Maps data.
@@ -175,17 +85,16 @@ def generate_combined_ride_data_from_scraping(scraped_attractions: list, overwri
     :return: List of combined ride data.
     """
     # Rides must contain:
-    # - name
-    # - is_open
-    # - duration
-    # - description
-    # - max_height_cm
-    # - min_height_cm
-    # - min_age
-    # - accessibility_tags
-    # - keywords
-    # - detail_url
-    # - image_url
+    # - scrape_name
+    # - scrape_duration
+    # - scrape_description
+    # - scrape_max_height_cm
+    # - scrape_min_height_cm
+    # - scrape_min_age
+    # - scrape_accessibility_tags
+    # - scrape_keywords
+    # - scrape_detail_url
+    # - scrape_image_url
 
     # - osm_tags
     # - osm_node_id
@@ -197,6 +106,7 @@ def generate_combined_ride_data_from_scraping(scraped_attractions: list, overwri
 
     # - qt_id
     # - qt_name
+    # - qt_is_open
 
     print("Generating combined ride data from scraping")
 

@@ -45,6 +45,51 @@ def fetch_long_and_lat_by_place_name(url: str) -> dict | None:
         return None
 
 
+def create_all_files_and_merge(clean: bool = False) -> None:
+    """
+    Does the scraping and creates all files necessary for the final combined data.
+    and merges them into the combined data file.
+
+    Expected that the `FINAL_COMBINED_ATTRACTIONS` file exists
+    and has been populated with the scraped data.
+
+    :clean: If True, dont use cached data.
+    """
+    assert os.path.exists(FINAL_COMBINED_ATTRACTIONS_PATH), f"File not found: {FINAL_COMBINED_ATTRACTIONS_PATH}"
+
+    final_attractions = load_json_data(FINAL_COMBINED_ATTRACTIONS_PATH)
+
+    if clean:
+        os.remove(GM_ATTRACTIONS_PATH)
+        print(f"Removed existing file: {GM_ATTRACTIONS_PATH}")
+        remove_cache_for_url(GM_GEOCODE_URL)
+        print(f"Removed cache for URL: {GM_GEOCODE_URL}")
+
+    PLACE_NAME_PREFIX = "Disneyland Paris, "
+    google_attractions = []
+    for attraction in final_attractions:
+        if "name" in attraction:
+            if attraction["name"] == "Pirates' Beach":
+                # Special case for Pirates' Beach
+                # This is a workaround for the fact that the name is not found in Google Maps
+                # but the attraction is still there under the name "La Plage des Pirates"
+                name = PLACE_NAME_PREFIX + "La Plage des Pirates"
+            else:
+                name = PLACE_NAME_PREFIX + attraction["name"]
+
+            gm_data = fetch_long_and_lat_by_place_name(name)
+            if gm_data:
+                attraction["gm_lat"] = gm_data["latitude"]
+                attraction["gm_lon"] = gm_data["longitude"]
+                google_attractions.append(gm_data)
+
+        else:
+            print("No name found in attraction data: ", attraction)
+
+    save_json_data(google_attractions, GM_ATTRACTIONS_PATH)
+    save_json_data(final_attractions, FINAL_COMBINED_ATTRACTIONS_PATH)
+
+
 # endregion
 
 

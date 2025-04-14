@@ -1,5 +1,252 @@
-{
-    "place_name": "Disneyland Paris, \"it's a small world\"",
-    "latitude": 48.8746045,
-    "longitude": 2.7760585
-}
+[
+    {
+        "place_name": "Disneyland Paris, \"it's a small world\"",
+        "latitude": 48.8746045,
+        "longitude": 2.7760585
+    },
+    {
+        "place_name": "Disneyland Paris, Adventure Isle",
+        "latitude": 48.8727101,
+        "longitude": 2.773228
+    },
+    {
+        "place_name": "Disneyland Paris, Alice's Curious Labyrinth",
+        "latitude": 48.8744926,
+        "longitude": 2.7744886
+    },
+    {
+        "place_name": "Disneyland Paris, Autopia",
+        "latitude": 48.8734222,
+        "longitude": 2.7787935
+    },
+    {
+        "place_name": "Disneyland Paris, Avengers Assemble: Flight Force",
+        "latitude": 48.8653195,
+        "longitude": 2.779662
+    },
+    {
+        "place_name": "Disneyland Paris, Blanche-Neige et les Sept Nains®",
+        "latitude": 48.8673858,
+        "longitude": 2.783593
+    },
+    {
+        "place_name": "Disneyland Paris, Buzz Lightyear Laser Blast",
+        "latitude": 48.87343,
+        "longitude": 2.7779628
+    },
+    {
+        "place_name": "Disneyland Paris, Cars Quatre Roues Rallye",
+        "latitude": 48.8676914,
+        "longitude": 2.7778962
+    },
+    {
+        "place_name": "Disneyland Paris, Cars ROAD TRIP",
+        "latitude": 48.8663508,
+        "longitude": 2.7748753
+    },
+    {
+        "place_name": "Disneyland Paris, Casey Jr. – le Petit Train du Cirque",
+        "latitude": 48.8751718,
+        "longitude": 2.7743006
+    },
+    {
+        "place_name": "Disneyland Paris, Crush's Coaster",
+        "latitude": 48.8680718,
+        "longitude": 2.7781835
+    },
+    {
+        "place_name": "Disneyland Paris, Discovery Arcade",
+        "latitude": 48.8715796,
+        "longitude": 2.7788037
+    },
+    {
+        "place_name": "Disneyland Paris, Disneyland Railroad Main Street Station",
+        "latitude": 48.8708418,
+        "longitude": 2.7791082
+    },
+    {
+        "place_name": "Disneyland Paris, Dumbo the Flying Elephant",
+        "latitude": 48.87399809999999,
+        "longitude": 2.7745852
+    },
+    {
+        "place_name": "Disneyland Paris, Horse-Drawn Streetcars",
+        "latitude": 48.8710496,
+        "longitude": 2.7787997
+    },
+    {
+        "place_name": "Disneyland Paris, Indiana Jones™ and the Temple of Peril",
+        "latitude": 48.8724169,
+        "longitude": 2.7721101
+    },
+    {
+        "place_name": "Disneyland Paris, La Cabane des Robinson",
+        "latitude": 48.8724538,
+        "longitude": 2.7739421
+    },
+    {
+        "place_name": "Disneyland Paris, La Galerie de la Belle au Bois Dormant",
+        "latitude": 48.8731967,
+        "longitude": 2.7761138
+    },
+    {
+        "place_name": "Disneyland Paris, La Tanière du Dragon",
+        "latitude": 48.8728867,
+        "longitude": 2.7759671
+    },
+    {
+        "place_name": "Disneyland Paris, Le Carrousel de Lancelot",
+        "latitude": 48.8737621,
+        "longitude": 2.7753711
+    },
+    {
+        "place_name": "Disneyland Paris, Le Passage Enchanté d'Aladdin",
+        "latitude": 48.872526,
+        "longitude": 2.7754709
+    },
+    {
+        "place_name": "Disneyland Paris, Le Pays des Contes de Fées",
+        "latitude": 48.8752916,
+        "longitude": 2.7746922
+    },
+    {
+        "place_name": "Disneyland Paris, Les Mystères du Nautilus",
+        "latitude": 48.8734204,
+        "longitude": 2.77962
+    },
+    {
+        "place_name": "Disneyland Paris, Les Tapis Volants - Flying Carpets Over Agrabah®",
+        "latitude": 48.8682902,
+        "longitude": 2.7783714
+    },
+    {
+        "place_name": "Disneyland Paris, Les Voyages de Pinocchio",
+        "latitude": 48.8735736,
+        "longitude": 2.7752062
+    },
+    {
+        "place_name": "Disneyland Paris, Liberty Arcade",
+        "latitude": 48.8711553,
+        "longitude": 2.7780304
+    },
+    {
+        "place_name": "Disneyland Paris, Mad Hatter's Tea Cups",
+        "latitude": 48.8744215,
+        "longitude": 2.775168
+    },
+    {
+        "place_name": "Disneyland Paris, Main Street Vehicles",
+        "latitude": 48.8713403,
+        "longitude": 2.7789377
+    },
+    {
+        "place_name": "Disneyland Paris, Meet Mickey Mouse",
+        "latitude": 48.874419,
+        "longitude": 2.7738541
+    },
+    {
+        "place_name": "Disneyland Paris, Peter Pan's Flight",
+        "latitude": 48.87384609999999,
+        "longitude": 2.7740731
+    },
+    {
+        "place_name": "Disneyland Paris, Phantom Manor",
+        "latitude": 48.8709749,
+        "longitude": 2.7768153
+    },
+    {
+        "place_name": "Disneyland Paris, Pirates of the Caribbean",
+        "latitude": 48.8734963,
+        "longitude": 2.7733834
+    },
+    {
+        "place_name": "Disneyland Paris, La Plage des Pirates",
+        "latitude": 48.8727261,
+        "longitude": 2.7737756
+    },
+    {
+        "place_name": "Disneyland Paris, Princess Pavilion",
+        "latitude": 48.8747668,
+        "longitude": 2.7755612
+    },
+    {
+        "place_name": "Disneyland Paris, RC Racer",
+        "latitude": 48.8668366,
+        "longitude": 2.776443
+    },
+    {
+        "place_name": "Disneyland Paris, Ratatouille : L’Aventure Totalement Toquée de Rémy​",
+        "latitude": 48.8675673,
+        "longitude": 2.7762442
+    },
+    {
+        "place_name": "Disneyland Paris, Rustler Roundup Shootin' Gallery",
+        "latitude": 48.8715571,
+        "longitude": 2.7755898
+    },
+    {
+        "place_name": "Disneyland Paris, Sleeping Beauty Castle",
+        "latitude": 48.8731432,
+        "longitude": 2.7761112
+    },
+    {
+        "place_name": "Disneyland Paris, Slinky® Dog Zigzag Spin",
+        "latitude": 48.8670528,
+        "longitude": 2.7767305
+    },
+    {
+        "place_name": "Disneyland Paris, Spider-Man W.E.B. Adventure",
+        "latitude": 48.8659071,
+        "longitude": 2.7790665
+    },
+    {
+        "place_name": "Disneyland Paris, Star Tours: The Adventures Continue*",
+        "latitude": 48.8746331,
+        "longitude": 2.778779
+    },
+    {
+        "place_name": "Disneyland Paris, Star Wars Hyperspace Mountain",
+        "latitude": 48.874126,
+        "longitude": 2.7792799
+    },
+    {
+        "place_name": "Disneyland Paris, The Twilight Zone Tower of Terror",
+        "latitude": 48.86670119999999,
+        "longitude": 2.7787489
+    },
+    {
+        "place_name": "Disneyland Paris, Toy Soldiers Parachute Drop",
+        "latitude": 48.8671523,
+        "longitude": 2.7774423
+    },
+    {
+        "place_name": "Disneyland Paris, Welcome to Starport: A Star Wars Encounter",
+        "latitude": 48.8673858,
+        "longitude": 2.783593
+    },
+    {
+        "place_name": "Disneyland Paris, Big Thunder Mountain",
+        "latitude": 48.8713888,
+        "longitude": 2.7746198
+    },
+    {
+        "place_name": "Disneyland Paris, Frontierland Playground",
+        "latitude": 48.8703967,
+        "longitude": 2.7741952
+    },
+    {
+        "place_name": "Disneyland Paris, Orbitron®",
+        "latitude": 48.87356279999999,
+        "longitude": 2.7783953
+    },
+    {
+        "place_name": "Disneyland Paris, Pirate Galleon",
+        "latitude": 48.8729214,
+        "longitude": 2.7737364
+    },
+    {
+        "place_name": "Disneyland Paris, Thunder Mesa Riverboat Landing",
+        "latitude": 48.87118770000001,
+        "longitude": 2.7764948
+    }
+]
