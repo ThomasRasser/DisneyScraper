@@ -1,0 +1,36 @@
+{
+    "id": "chatcmpl-BM2x7UMfIONcxthFtMzAmFJqHvSW1",
+    "object": "chat.completion",
+    "created": 1744594265,
+    "model": "gpt-3.5-turbo-0125",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "{\n    \"name\": \"Avengers Assemble: Flight Force\",\n    \"duration\": null,\n    \"description\": \"Heroes wanted! Team up with Iron Man and Captain Marvel to save the world from an intergalactic threat. Board Stark Industries’ hypersonic vehicles for an epic adventure.\",\n    \"max_height_cm\": null,\n    \"min_height_cm\": 120,\n    \"min_age\": null,\n    \"accessibility_tags\": [\"Disney PhotoPass™ available\", \"Expectant mothers may not ride\", \"Transfer from wheelchair essential\", \"Audio Description\"]\n}",
+                "refusal": null,
+                "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 507,
+        "completion_tokens": 116,
+        "total_tokens": 623,
+        "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+        }
+    },
+    "service_tier": "default",
+    "system_fingerprint": null
+}

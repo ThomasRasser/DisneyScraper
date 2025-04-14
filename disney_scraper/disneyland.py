@@ -4,17 +4,20 @@ import os
 import sys
 import time
 
-from cache_decorator import remove_complete_cache
-from parser import parse_disneyland_attraction_details, parse_disneyland_attraction_lists, parse_disneyland_dining_lists
-from scraper import get_html_multiple_cached, get_html_single_cached
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# region  Constants
-THOMAS_RASSER_URL = "https://rasser.derthomas.at/Autohaus/index.html"
-DISNEY_ATTRACTIONS_URL = "https://www.disneylandparis.com/en-gb/attractions/"
-PARSED_ATTRACTIONS_PATH = "data/parsed_attractions.json"
-DISNEY_DINING_URL = "https://www.disneylandparis.com/en-gb/dining/"
-PARSED_DINING_PATH = "data/parsed_dining.json"
-# endregion
+from parser import parse_disneyland_attraction_details, parse_disneyland_attraction_lists, parse_disneyland_dining_lists
+
+from utils.cache_decorator import remove_complete_cache
+from utils.constants import (
+    DISNEY_ATTRACTIONS_URL,
+    DISNEY_DINING_URL,
+    PARSED_ATTRACTIONS_PATH,
+    PARSED_DINING_PATH,
+    clean_path,
+    print_path,
+)
+from utils.scraper import get_html_multiple_cached, get_html_single_cached
 
 
 # region Scraping Functions
@@ -29,7 +32,7 @@ def scrape_disneyland_attraction_lists() -> list:
     html_content = get_html_single_cached(DISNEY_ATTRACTIONS_URL)
     if not html_content:
         print("Failed to fetch HTML content.")
-        return
+        return []
     print("Fetched HTML content.")
 
     # Parse the HTML content and extract attraction data
@@ -39,7 +42,7 @@ def scrape_disneyland_attraction_lists() -> list:
     os.makedirs(os.path.dirname(PARSED_ATTRACTIONS_PATH), exist_ok=True)
     with open(PARSED_ATTRACTIONS_PATH, "w", encoding="utf-8") as f:
         json.dump(attractions, f, ensure_ascii=False, indent=4)
-    print(f"Parsed data saved to {PARSED_ATTRACTIONS_PATH}.")
+    print(f"Parsed data saved to {clean_path(PARSED_ATTRACTIONS_PATH)}.")
 
     return attractions
 
@@ -55,7 +58,7 @@ def scrape_disneyland_dining_lists() -> list:
     html_content = get_html_single_cached(DISNEY_DINING_URL)
     if not html_content:
         print("Failed to fetch HTML content.")
-        return
+        return []
     print("Fetched HTML content.")
 
     # Parse the HTML content and extract dining data
@@ -65,12 +68,18 @@ def scrape_disneyland_dining_lists() -> list:
     os.makedirs(os.path.dirname(PARSED_DINING_PATH), exist_ok=True)
     with open(PARSED_DINING_PATH, "w", encoding="utf-8") as f:
         json.dump(dining, f, ensure_ascii=False, indent=4)
-    print(f"Parsed data saved to {PARSED_DINING_PATH}.")
+    print(f"Parsed data saved to {clean_path(PARSED_DINING_PATH)}.")
 
     return dining
 
 
 def scrape_disneyland_attractions_details() -> list:
+    # NOTE:
+    # This function works, but unfortunately, every second attraction has different HTML structure.
+    # So I only get detailed data for 10% of the attractions.
+    # I will not use this function for now.
+    # If we need more details, we might have to scrape it manually   ...like cavemen.
+
     """
     Scrape detailed information about Disneyland Paris attractions,
     by visiting each attraction's page.
@@ -103,7 +112,9 @@ def scrape_disneyland_attractions_details() -> list:
     detailed_attractions_path = PARSED_ATTRACTIONS_PATH.replace(".json", "_details.json")
     with open(detailed_attractions_path, "w", encoding="utf-8") as f:
         json.dump(attractions_detailed_lst, f, ensure_ascii=False, indent=4)
-    print(f"Detailed data saved to {detailed_attractions_path}.")
+    print(f"Detailed data saved to {clean_path(detailed_attractions_path)}.")
+
+    return attractions_detailed_lst
 
 
 # endregion
@@ -127,9 +138,9 @@ def main():
             print(f"Removed existing file: {PARSED_ATTRACTIONS_PATH}")
             remove_complete_cache()
 
-        scrape_disneyland_attraction_lists()
-        scrape_disneyland_dining_lists()
-        # scrape_disneyland_attractions_details()
+        # scrape_disneyland_attraction_lists()
+        # scrape_disneyland_dining_lists()
+        scrape_disneyland_attractions_details()
 
     except KeyboardInterrupt:
         print("Process interrupted by user.")

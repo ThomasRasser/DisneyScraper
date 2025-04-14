@@ -1,0 +1,422 @@
+{
+    "Adventure Isle": {
+        "id": 2702,
+        "wait_time": 0,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Indiana Jones and the Temple of Peril Single Rider": {
+        "id": 7306,
+        "wait_time": 0,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Indiana Jones™ and the Temple of Peril": {
+        "id": 2,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "La Cabane des Robinson": {
+        "id": 1,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Le Passage Enchanté d'Aladdin": {
+        "id": 2703,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Pirate Galleon": {
+        "id": 2705,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Pirates of the Caribbean": {
+        "id": 3,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Pirates' Beach": {
+        "id": 2704,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Adventureland"
+    },
+    "Autopia, presented by Avis": {
+        "id": 4,
+        "wait_time": 20,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Buzz Lightyear Laser Blast": {
+        "id": 5,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Disneyland Railroad Discoveryland Station": {
+        "id": 2706,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Les Mystères du Nautilus": {
+        "id": 6,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Mickey’s PhilharMagic": {
+        "id": 2707,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Orbitron®": {
+        "id": 7,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Star Tours: The Adventures Continue*": {
+        "id": 9,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Star Wars Hyperspace Mountain": {
+        "id": 8,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Star Wars Hyperspace Mountain Single Rider": {
+        "id": 7278,
+        "wait_time": 0,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "Welcome to Starport: A Star Wars Encounter": {
+        "id": 4573,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Discoveryland"
+    },
+    "\"it's a small world\"": {
+        "id": 19,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Alice's Curious Labyrinth": {
+        "id": 14,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Blanche-Neige et les Sept Nains®": {
+        "id": 15,
+        "wait_time": 0,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Casey Jr. – le Petit Train du Cirque": {
+        "id": 17,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Disneyland Railroad Fantasyland Station": {
+        "id": 2711,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Disneyland Railroad Main Street Station": {
+        "id": 2708,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Main Street U.S.A"
+    },
+    "Dumbo the Flying Elephant": {
+        "id": 18,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "La Tanière du Dragon": {
+        "id": 2710,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Le Carrousel de Lancelot ": {
+        "id": 16,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Le Pays des Contes de Fées, presented by Vittel": {
+        "id": 21,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Les Voyages de Pinocchio": {
+        "id": 23,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Mad Hatter's Tea Cups": {
+        "id": 20,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Meet Mickey Mouse": {
+        "id": 13,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Peter Pan's Flight": {
+        "id": 22,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Princess Pavilion": {
+        "id": 24,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Fantasyland"
+    },
+    "Big Thunder Mountain": {
+        "id": 25,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "Disneyland Railroad Frontierland Depot": {
+        "id": 2714,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "Frontierland Playground": {
+        "id": 2713,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "Phantom Manor": {
+        "id": 26,
+        "wait_time": 5,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "River Rogue Keelboats": {
+        "id": 27,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "Rustler Roundup Shootin' Gallery": {
+        "id": 2712,
+        "wait_time": 0,
+        "is_open": true,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "Thunder Mesa Riverboat Landing": {
+        "id": 28,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Frontierland"
+    },
+    "Main Street Vehicles": {
+        "id": 12,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Main Street U.S.A"
+    },
+    "Avengers Assemble: Flight Force": {
+        "id": 10848,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Marvel Avengers Campus"
+    },
+    "Avengers Assemble: Flight Force Single Rider": {
+        "id": 10849,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Marvel Avengers Campus"
+    },
+    "Spider-Man W.E.B. Adventure": {
+        "id": 10845,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Marvel Avengers Campus"
+    },
+    "Spider-Man W.E.B. Adventure Single Rider": {
+        "id": 10846,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Marvel Avengers Campus"
+    },
+    "Meet Spider Man": {
+        "id": 266,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Production Courtyard"
+    },
+    "The Twilight Zone Tower of Terror": {
+        "id": 40,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Production Courtyard"
+    },
+    "Art of Disney Animation": {
+        "id": 30,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Cars Quatre Roues Rallye": {
+        "id": 31,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Cars ROAD TRIP": {
+        "id": 29,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Crush's Coaster": {
+        "id": 32,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Crush's Coaster Single Rider": {
+        "id": 7277,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Les Tapis Volants - Flying Carpets Over Agrabah®": {
+        "id": 33,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Ratatouille : L’Aventure Totalement Toquée de Rémy​": {
+        "id": 37,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Ratatouille: The Adventure Single Rider": {
+        "id": 7279,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "RC Racer": {
+        "id": 34,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "RC Racer Single Rider": {
+        "id": 7280,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Slinky® Dog Zigzag Spin": {
+        "id": 36,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Toy Soldiers Parachute Drop": {
+        "id": 35,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    },
+    "Toy Soldiers Parachute Drop Single Rider": {
+        "id": 7281,
+        "wait_time": 0,
+        "is_open": false,
+        "last_updated": "2025-04-13T19:50:04.000Z",
+        "land": "Toon Studio"
+    }
+}

@@ -1,0 +1,628 @@
+[
+    {
+        "name": "Spider-Man W.E.B. Adventure",
+        "closest_node": {
+            "type": "node",
+            "id": 10246213462,
+            "lat": 48.8658669,
+            "lon": 2.7793017
+        },
+        "distance_in_cm": 1777.5324242795941,
+        "gm_lat": 48.8659071,
+        "gm_lon": 2.7790665
+    },
+    {
+        "name": "Le Carrousel de Lancelot",
+        "closest_node": {
+            "type": "node",
+            "id": 3065592794,
+            "lat": 48.8738505,
+            "lon": 2.7753707
+        },
+        "distance_in_cm": 982.9675047163892,
+        "gm_lat": 48.8737621,
+        "gm_lon": 2.7753711
+    },
+    {
+        "name": "Mad Hatter's Tea Cups",
+        "closest_node": {
+            "type": "node",
+            "id": 916787665,
+            "lat": 48.8745042,
+            "lon": 2.7752094
+        },
+        "distance_in_cm": 968.1446278060268,
+        "gm_lat": 48.8744215,
+        "gm_lon": 2.775168
+    },
+    {
+        "name": "Blanche-Neige et les Sept Nains®",
+        "closest_node": {
+            "type": "node",
+            "id": 11254815504,
+            "lat": 48.8674449,
+            "lon": 2.7835381
+        },
+        "distance_in_cm": 770.1394111617301,
+        "gm_lat": 48.8673858,
+        "gm_lon": 2.783593
+    },
+    {
+        "name": "Welcome to Starport: A Star Wars Encounter",
+        "closest_node": {
+            "type": "node",
+            "id": 11254815504,
+            "lat": 48.8674449,
+            "lon": 2.7835381
+        },
+        "distance_in_cm": 770.1394111617301,
+        "gm_lat": 48.8673858,
+        "gm_lon": 2.783593
+    },
+    {
+        "name": "Les Tapis Volants - Flying Carpets Over Agrabah®",
+        "closest_node": {
+            "type": "node",
+            "id": 647892463,
+            "lat": 48.8683484,
+            "lon": 2.7784258
+        },
+        "distance_in_cm": 759.6921444606899,
+        "gm_lat": 48.8682902,
+        "gm_lon": 2.7783714
+    },
+    {
+        "name": "Frontierland Playground",
+        "closest_node": {
+            "type": "node",
+            "id": 1012691966,
+            "lat": 48.8704551,
+            "lon": 2.7742172
+        },
+        "distance_in_cm": 669.0169486008713,
+        "gm_lat": 48.8703967,
+        "gm_lon": 2.7741952
+    },
+    {
+        "name": "Cars ROAD TRIP",
+        "closest_node": {
+            "type": "node",
+            "id": 10243000258,
+            "lat": 48.8664026,
+            "lon": 2.7748742
+        },
+        "distance_in_cm": 576.0459153416997,
+        "gm_lat": 48.8663508,
+        "gm_lon": 2.7748753
+    },
+    {
+        "name": "Disneyland Railroad Main Street Station",
+        "closest_node": {
+            "type": "node",
+            "id": 258856843,
+            "lat": 48.8707952,
+            "lon": 2.7791228,
+            "tags": {
+                "name": "Disneyland Railroad Main Street Station",
+                "public_transport": "station",
+                "railway": "station",
+                "ref:FR:STIF": "412814",
+                "source": "STIF - 12/2016",
+                "tourism": "attraction",
+                "website": "http://parks.disneylandparis.co.uk/disneyland-park/lands/main-street-usa/attractions/disneyland-railroad.xhtml",
+                "wheelchair": "limited"
+            }
+        },
+        "distance_in_cm": 529.0568843469191,
+        "gm_lat": 48.8708418,
+        "gm_lon": 2.7791082
+    },
+    {
+        "name": "Main Street Vehicles",
+        "closest_node": {
+            "type": "node",
+            "id": 2999825293,
+            "lat": 48.8712939,
+            "lon": 2.7789479
+        },
+        "distance_in_cm": 521.3099557955359,
+        "gm_lat": 48.8713403,
+        "gm_lon": 2.7789377
+    },
+    {
+        "name": "Le Passage Enchanté d'Aladdin",
+        "closest_node": {
+            "type": "node",
+            "id": 3003025390,
+            "lat": 48.8725477,
+            "lon": 2.7754122
+        },
+        "distance_in_cm": 492.47610717697967,
+        "gm_lat": 48.872526,
+        "gm_lon": 2.7754709
+    },
+    {
+        "name": "RC Racer",
+        "closest_node": {
+            "type": "node",
+            "id": 11807614646,
+            "lat": 48.86684,
+            "lon": 2.7765048
+        },
+        "distance_in_cm": 453.6160273250526,
+        "gm_lat": 48.8668366,
+        "gm_lon": 2.776443
+    },
+    {
+        "name": "Slinky® Dog Zigzag Spin",
+        "closest_node": {
+            "type": "node",
+            "id": 11787204309,
+            "lat": 48.8670716,
+            "lon": 2.7767668
+        },
+        "distance_in_cm": 337.93380913234085,
+        "gm_lat": 48.8670528,
+        "gm_lon": 2.7767305
+    },
+    {
+        "name": "Rustler Roundup Shootin' Gallery",
+        "closest_node": {
+            "type": "node",
+            "id": 11300248358,
+            "lat": 48.8715869,
+            "lon": 2.775585
+        },
+        "distance_in_cm": 333.2153866063847,
+        "gm_lat": 48.8715571,
+        "gm_lon": 2.7755898
+    },
+    {
+        "name": "Pirates' Beach",
+        "closest_node": {
+            "type": "node",
+            "id": 11553555831,
+            "lat": 48.8727478,
+            "lon": 2.7737791
+        },
+        "distance_in_cm": 325.1671869835916,
+        "gm_lat": 48.872718573453426,
+        "gm_lon": 2.7737776093345774
+    },
+    {
+        "name": "Pirate Galleon",
+        "closest_node": {
+            "type": "node",
+            "id": 4249288872,
+            "lat": 48.8729179,
+            "lon": 2.7736928
+        },
+        "distance_in_cm": 321.2408305184738,
+        "gm_lat": 48.8729214,
+        "gm_lon": 2.7737364
+    },
+    {
+        "name": "Le Pays des Contes de Fées, presented by Vittel",
+        "closest_node": {
+            "type": "node",
+            "id": 1844291676,
+            "lat": 48.8752955,
+            "lon": 2.7746942
+        },
+        "distance_in_cm": 320.5647470580818,
+        "gm_lat": 48.87527745850193,
+        "gm_lon": 2.774660011170809
+    },
+    {
+        "name": "\"it's a small world\"",
+        "closest_node": {
+            "type": "node",
+            "id": 3791570149,
+            "lat": 48.8746301,
+            "lon": 2.7760493
+        },
+        "distance_in_cm": 292.50261772805106,
+        "gm_lat": 48.8746045,
+        "gm_lon": 2.7760585
+    },
+    {
+        "name": "Indiana Jones™ and the Temple of Peril",
+        "closest_node": {
+            "type": "node",
+            "id": 1066425817,
+            "lat": 48.8724284,
+            "lon": 2.7721393
+        },
+        "distance_in_cm": 248.9173267482523,
+        "gm_lat": 48.8724169,
+        "gm_lon": 2.7721101
+    },
+    {
+        "name": "Big Thunder Mountain",
+        "closest_node": {
+            "type": "node",
+            "id": 11358470199,
+            "lat": 48.8714002,
+            "lon": 2.7745919
+        },
+        "distance_in_cm": 240.2245066768892,
+        "gm_lat": 48.8713888,
+        "gm_lon": 2.7746198
+    },
+    {
+        "name": "Alice's Curious Labyrinth",
+        "closest_node": {
+            "type": "node",
+            "id": 3117635360,
+            "lat": 48.8745141,
+            "lon": 2.7744917
+        },
+        "distance_in_cm": 240.1416886122141,
+        "gm_lat": 48.8744926,
+        "gm_lon": 2.7744886
+    },
+    {
+        "name": "Phantom Manor",
+        "closest_node": {
+            "type": "node",
+            "id": 639046861,
+            "lat": 48.8709535,
+            "lon": 2.7768148,
+            "tags": {
+                "barrier": "gate"
+            }
+        },
+        "distance_in_cm": 237.98524175818594,
+        "gm_lat": 48.8709749,
+        "gm_lon": 2.7768153
+    },
+    {
+        "name": "Dumbo the Flying Elephant",
+        "closest_node": {
+            "type": "node",
+            "id": 3601343574,
+            "lat": 48.8740174,
+            "lon": 2.7745935
+        },
+        "distance_in_cm": 223.02588008872823,
+        "gm_lat": 48.87399809999999,
+        "gm_lon": 2.7745852
+    },
+    {
+        "name": "Princess Pavilion",
+        "closest_node": {
+            "type": "node",
+            "id": 3112927788,
+            "lat": 48.8747518,
+            "lon": 2.7755451,
+            "tags": {
+                "barrier": "sally_port",
+                "entrance": "main"
+            }
+        },
+        "distance_in_cm": 204.16573254069542,
+        "gm_lat": 48.8747668,
+        "gm_lon": 2.7755612
+    },
+    {
+        "name": "Sleeping Beauty Castle",
+        "closest_node": {
+            "type": "node",
+            "id": 12587599683,
+            "lat": 48.8731351,
+            "lon": 2.7761337
+        },
+        "distance_in_cm": 187.59251485918753,
+        "gm_lat": 48.8731432,
+        "gm_lon": 2.7761112
+    },
+    {
+        "name": "Star Tours: The Adventures Continue*",
+        "closest_node": {
+            "type": "node",
+            "id": 2392527121,
+            "lat": 48.8746351,
+            "lon": 2.7788043
+        },
+        "distance_in_cm": 186.36040295327075,
+        "gm_lat": 48.8746331,
+        "gm_lon": 2.778779
+    },
+    {
+        "name": "La Galerie de la Belle au Bois Dormant",
+        "closest_node": {
+            "type": "node",
+            "id": 3003153136,
+            "lat": 48.8732013,
+            "lon": 2.7761363
+        },
+        "distance_in_cm": 172.32222804750864,
+        "gm_lat": 48.8731967,
+        "gm_lon": 2.7761138
+    },
+    {
+        "name": "Pirates of the Caribbean",
+        "closest_node": {
+            "type": "node",
+            "id": 3451291236,
+            "lat": 48.8735047,
+            "lon": 2.7734003
+        },
+        "distance_in_cm": 154.92251636262034,
+        "gm_lat": 48.8734963,
+        "gm_lon": 2.7733834
+    },
+    {
+        "name": "Autopia, presented by Avis",
+        "closest_node": {
+            "type": "node",
+            "id": 12563467281,
+            "lat": 48.8734126,
+            "lon": 2.7787789
+        },
+        "distance_in_cm": 150.98511381793116,
+        "gm_lat": 48.8734222,
+        "gm_lon": 2.7787935
+    },
+    {
+        "name": "Meet Mickey Mouse",
+        "closest_node": {
+            "type": "node",
+            "id": 8618571328,
+            "lat": 48.8744057,
+            "lon": 2.7738538
+        },
+        "distance_in_cm": 147.90552646104047,
+        "gm_lat": 48.874419,
+        "gm_lon": 2.7738541
+    },
+    {
+        "name": "La Cabane des Robinson",
+        "closest_node": {
+            "type": "node",
+            "id": 11489309938,
+            "lat": 48.8724428,
+            "lon": 2.7739531
+        },
+        "distance_in_cm": 146.40063492957816,
+        "gm_lat": 48.8724538,
+        "gm_lon": 2.7739421
+    },
+    {
+        "name": "Star Wars Hyperspace Mountain",
+        "closest_node": {
+            "type": "node",
+            "id": 2069664865,
+            "lat": 48.8741346,
+            "lon": 2.779265
+        },
+        "distance_in_cm": 144.98011048114657,
+        "gm_lat": 48.874126,
+        "gm_lon": 2.7792799
+    },
+    {
+        "name": "Avengers Assemble: Flight Force",
+        "closest_node": {
+            "type": "node",
+            "id": 11238569076,
+            "lat": 48.8653272,
+            "lon": 2.7796463
+        },
+        "distance_in_cm": 143.24588939508357,
+        "gm_lat": 48.8653195,
+        "gm_lon": 2.779662
+    },
+    {
+        "name": "Orbitron®",
+        "closest_node": {
+            "type": "node",
+            "id": 3003692575,
+            "lat": 48.8735621,
+            "lon": 2.7784147
+        },
+        "distance_in_cm": 142.0961131678213,
+        "gm_lat": 48.87356279999999,
+        "gm_lon": 2.7783953
+    },
+    {
+        "name": "Casey Jr. – le Petit Train du Cirque",
+        "closest_node": {
+            "type": "node",
+            "id": 3173780588,
+            "lat": 48.875176,
+            "lon": 2.7742836
+        },
+        "distance_in_cm": 132.80844396966828,
+        "gm_lat": 48.8751718,
+        "gm_lon": 2.7743006
+    },
+    {
+        "name": "Liberty Arcade",
+        "closest_node": {
+            "type": "node",
+            "id": 916794817,
+            "lat": 48.8711524,
+            "lon": 2.7780478
+        },
+        "distance_in_cm": 131.28368501791041,
+        "gm_lat": 48.8711553,
+        "gm_lon": 2.7780304
+    },
+    {
+        "name": "Les Mystères du Nautilus",
+        "closest_node": {
+            "type": "node",
+            "id": 488562726,
+            "lat": 48.8734102,
+            "lon": 2.7796266
+        },
+        "distance_in_cm": 123.26304464485928,
+        "gm_lat": 48.8734204,
+        "gm_lon": 2.77962
+    },
+    {
+        "name": "Buzz Lightyear Laser Blast",
+        "closest_node": {
+            "type": "node",
+            "id": 3004464275,
+            "lat": 48.8734208,
+            "lon": 2.7779704
+        },
+        "distance_in_cm": 116.42436878079165,
+        "gm_lat": 48.87343,
+        "gm_lon": 2.7779628
+    },
+    {
+        "name": "Les Voyages de Pinocchio",
+        "closest_node": {
+            "type": "node",
+            "id": 3065948816,
+            "lat": 48.8735707,
+            "lon": 2.7752199
+        },
+        "distance_in_cm": 105.25676110362679,
+        "gm_lat": 48.8735736,
+        "gm_lon": 2.7752062
+    },
+    {
+        "name": "Cars Quatre Roues Rallye",
+        "closest_node": {
+            "type": "node",
+            "id": 3493027055,
+            "lat": 48.8676955,
+            "lon": 2.7779083
+        },
+        "distance_in_cm": 99.55625133885775,
+        "gm_lat": 48.8676914,
+        "gm_lon": 2.7778962
+    },
+    {
+        "name": "Ratatouille : L’Aventure Totalement Toquée de Rémy​",
+        "closest_node": {
+            "type": "node",
+            "id": 2893798839,
+            "lat": 48.8675621,
+            "lon": 2.7762539,
+            "tags": {
+                "entrance": "main"
+            }
+        },
+        "distance_in_cm": 91.52702691945511,
+        "gm_lat": 48.8675673,
+        "gm_lon": 2.7762442
+    },
+    {
+        "name": "Thunder Mesa Riverboat Landing",
+        "closest_node": {
+            "type": "node",
+            "id": 916767004,
+            "lat": 48.8711953,
+            "lon": 2.7764995
+        },
+        "distance_in_cm": 91.23205007606161,
+        "gm_lat": 48.87118770000001,
+        "gm_lon": 2.7764948
+    },
+    {
+        "name": "Toy Soldiers Parachute Drop",
+        "closest_node": {
+            "type": "node",
+            "id": 11807404579,
+            "lat": 48.8671446,
+            "lon": 2.7774394
+        },
+        "distance_in_cm": 88.20855576528236,
+        "gm_lat": 48.8671523,
+        "gm_lon": 2.7774423
+    },
+    {
+        "name": "Adventure Isle",
+        "closest_node": {
+            "type": "node",
+            "id": 5676737250,
+            "lat": 48.8727149,
+            "lon": 2.7732361
+        },
+        "distance_in_cm": 79.73832363128811,
+        "gm_lat": 48.8727101,
+        "gm_lon": 2.773228
+    },
+    {
+        "name": "Crush's Coaster",
+        "closest_node": {
+            "type": "node",
+            "id": 10079975973,
+            "lat": 48.8680696,
+            "lon": 2.7781899
+        },
+        "distance_in_cm": 52.818364380076325,
+        "gm_lat": 48.8680718,
+        "gm_lon": 2.7781835
+    },
+    {
+        "name": "The Twilight Zone Tower of Terror",
+        "closest_node": {
+            "type": "node",
+            "id": 10080172426,
+            "lat": 48.8667058,
+            "lon": 2.778748
+        },
+        "distance_in_cm": 51.57155689261325,
+        "gm_lat": 48.86670119999999,
+        "gm_lon": 2.7787489
+    },
+    {
+        "name": "Horse-Drawn Streetcars",
+        "closest_node": {
+            "type": "node",
+            "id": 10156777226,
+            "lat": 48.8710471,
+            "lon": 2.778795,
+            "tags": {
+                "railway": "tram_crossing"
+            }
+        },
+        "distance_in_cm": 44.20901243798828,
+        "gm_lat": 48.8710496,
+        "gm_lon": 2.7787997
+    },
+    {
+        "name": "Discovery Arcade",
+        "closest_node": {
+            "type": "node",
+            "id": 485336379,
+            "lat": 48.8715804,
+            "lon": 2.7787984
+        },
+        "distance_in_cm": 39.77092961149136,
+        "gm_lat": 48.8715796,
+        "gm_lon": 2.7788037
+    },
+    {
+        "name": "Peter Pan's Flight",
+        "closest_node": {
+            "type": "node",
+            "id": 3463579829,
+            "lat": 48.8738442,
+            "lon": 2.774069
+        },
+        "distance_in_cm": 36.68069953830227,
+        "gm_lat": 48.87384609999999,
+        "gm_lon": 2.7740731
+    },
+    {
+        "name": "La Tanière du Dragon",
+        "closest_node": {
+            "type": "node",
+            "id": 12587438468,
+            "lat": 48.8728856,
+            "lon": 2.7759696,
+            "tags": {
+                "barrier": "sally_port"
+            }
+        },
+        "distance_in_cm": 21.998109520439595,
+        "gm_lat": 48.8728867,
+        "gm_lon": 2.7759671
+    }
+]

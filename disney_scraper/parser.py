@@ -178,7 +178,7 @@ def parse_disneyland_attraction_details(html: str) -> dict:
 
     # Keywords
     keywords_tags = soup.find_all("p", class_="sc-38eb0625-3")
-    attraction["keywords"] = [tag.text.strip() for tag in keywords_tags if tag and tag.text]
+    attraction["keywords"] = [tag.text.strip() for tag in keywords_tags if tag and tag.text]  # type: ignore
     # print(f"Keywords: {attraction['keywords']}")
 
     # Services description
@@ -192,7 +192,7 @@ def parse_disneyland_attraction_details(html: str) -> dict:
     services_list_tags = soup.find_all("div", class_="sc-12a24b76-0")
     attraction["services_list"] = [
         tag.find("p").text.strip() for tag in services_list_tags if tag and tag.find("p") and tag.find("p").text
-    ]
+    ]  # type: ignore
     # print(f"Services list: {attraction['services_list']}")
 
     return attraction

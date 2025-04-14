@@ -1,9 +1,11 @@
 import hashlib
 import json
 import os
+import sys
 import time
 
-CACHE_DIR = "cache"
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from utils.constants import CACHE_DIR
 
 
 def file_cache_wrapper_url_fetch(func):
@@ -37,7 +39,7 @@ def file_cache_wrapper_url_fetch(func):
                     pass
 
         # Cache miss or expired, call the original function
-        html_content = func(url)
+        html_content = func(*args, **kwargs)
 
         # Save the result to cache if it's not None
         if html_content is not None:

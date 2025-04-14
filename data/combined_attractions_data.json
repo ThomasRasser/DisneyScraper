@@ -1,0 +1,628 @@
+{
+    "Disneyland Railroad Main Street Station": {
+        "type": "node",
+        "id": 258856843,
+        "lat": 48.8707952,
+        "lon": 2.7791228,
+        "tags": {
+            "name": "Disneyland Railroad Main Street Station",
+            "public_transport": "station",
+            "railway": "station",
+            "ref:FR:STIF": "412814",
+            "source": "STIF - 12/2016",
+            "tourism": "attraction",
+            "website": "http://parks.disneylandparis.co.uk/disneyland-park/lands/main-street-usa/attractions/disneyland-railroad.xhtml",
+            "wheelchair": "limited"
+        }
+    },
+    "id": 11987877673,
+    "tags": {
+        "bus": "yes",
+        "name": "Parking Nord",
+        "public_transport": "stop_position"
+    },
+    "lat": 48.8758996,
+    "lon": 2.7808023,
+    "Disneyland Railroad Frontierland Depot": {
+        "type": "node",
+        "id": 258856858,
+        "lat": 48.8701941,
+        "lon": 2.7721388,
+        "tags": {
+            "addr:city": "Marne-la-Vallée",
+            "addr:postcode": "77700",
+            "addr:street": "Frontierland",
+            "name": "Disneyland Railroad Frontierland Depot",
+            "operator": "Disneyland",
+            "public_transport": "station",
+            "railway": "station",
+            "source": "survey",
+            "tourism": "attraction",
+            "train": "yes",
+            "website": "http://parks.disneylandparis.co.uk/disneyland-park/lands/frontierland/attractions/disneyland-railroad.xhtml",
+            "wheelchair": "limited"
+        }
+    },
+    "Disneyland Railroad Fantasyland Station": {
+        "type": "node",
+        "id": 258856870,
+        "lat": 48.8746234,
+        "lon": 2.7735731,
+        "tags": {
+            "name": "Disneyland Railroad Fantasyland Station",
+            "operator": "Disneyland",
+            "public_transport": "station",
+            "railway": "station",
+            "source": "survey",
+            "tourism": "attraction",
+            "wheelchair": "limited"
+        }
+    },
+    "Disneyland Railroad Discoveryland Station": {
+        "type": "node",
+        "id": 258856876,
+        "lat": 48.874721,
+        "lon": 2.7794141,
+        "tags": {
+            "name": "Disneyland Railroad Discoveryland Station",
+            "operator": "Disneyland",
+            "public_transport": "station",
+            "railway": "station",
+            "tourism": "attraction",
+            "wheelchair": "limited"
+        }
+    },
+    "Hôtel Santa Fe": {
+        "type": "node",
+        "id": 275582625,
+        "lat": 48.8719755,
+        "lon": 2.7950958,
+        "tags": {
+            "bus": "yes",
+            "name": "Hôtel Santa Fe",
+            "public_transport": "stop_position"
+        }
+    },
+    "Mushu": {
+        "type": "node",
+        "id": 10735564254,
+        "lat": 48.8687426,
+        "lon": 2.7721657,
+        "tags": {
+            "bus": "yes",
+            "name": "Mushu",
+            "public_transport": "stop_position"
+        }
+    },
+    "Freebooter Falls": {
+        "type": "node",
+        "id": 483071165,
+        "lat": 48.87301,
+        "lon": 2.7736168,
+        "tags": {
+            "name": "Freebooter Falls",
+            "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+            "waterway": "waterfall"
+        }
+    },
+    "Pirates": {
+        "type": "node",
+        "id": 2286255546,
+        "lat": 48.8753148,
+        "lon": 2.7722974,
+        "tags": {
+            "bus": "yes",
+            "name": "Pirates",
+            "public_transport": "stop_position"
+        }
+    },
+    "Toblas Norton & Sons": {
+        "type": "node",
+        "id": 905816305,
+        "lat": 48.8718042,
+        "lon": 2.7760965,
+        "tags": {
+            "advertising": "board",
+            "name": "Toblas Norton & Sons",
+            "source": "survey",
+            "website": "https://www.disneylandparis.fr/boutiques/parc-disneyland/thunder-mesa-mercantile-building/"
+        }
+    },
+    "Eureka Mining Supplies": {
+        "type": "node",
+        "id": 905816396,
+        "lat": 48.871722,
+        "lon": 2.7756474,
+        "tags": {
+            "advertising": "board",
+            "name": "Eureka Mining Supplies",
+            "source": "survey",
+            "website": "https://www.disneylandparis.fr/boutiques/parc-disneyland/thunder-mesa-mercantile-building/"
+        }
+    },
+    "Service Carte Handicapé": {
+        "type": "node",
+        "id": 905816489,
+        "lat": 48.8707443,
+        "lon": 2.780099,
+        "tags": {
+            "information": "office",
+            "name": "Service Carte Handicapé",
+            "old_name": "Bureau Passeport Annuel",
+            "shop": "ticket",
+            "source": "knowledge;survey",
+            "tourism": "information"
+        }
+    },
+    "Bonanza Outfitters": {
+        "type": "node",
+        "id": 905816838,
+        "lat": 48.8717136,
+        "lon": 2.7759403,
+        "tags": {
+            "advertising": "board",
+            "name": "Bonanza Outfitters",
+            "source": "survey",
+            "website": "https://www.disneylandparis.fr/boutiques/parc-disneyland/thunder-mesa-mercantile-building/"
+        }
+    },
+    "Mickey Clock": {
+        "type": "node",
+        "id": 1014178638,
+        "lat": 48.8702237,
+        "lon": 2.7798658,
+        "tags": {
+            "amenity": "clock",
+            "barrier": "sally_port",
+            "check_date": "2023-10-19",
+            "date": "no",
+            "display": "analog",
+            "faces": "1",
+            "name": "Mickey Clock",
+            "name:fr": "Horloge Mickey",
+            "support": "ornamental",
+            "visibility": "area"
+        }
+    },
+    "Bureau de Donald": {
+        "type": "node",
+        "id": 1041609455,
+        "lat": 48.8706734,
+        "lon": 2.7802064,
+        "tags": {
+            "alt_name": "Donald's Desk",
+            "information": "office",
+            "name": "Bureau de Donald",
+            "tourism": "information"
+        }
+    },
+    "Central Plaza": {
+        "type": "node",
+        "id": 4232097205,
+        "lat": 48.8728106,
+        "lon": 2.77698,
+        "tags": {
+            "bus": "yes",
+            "name": "Central Plaza",
+            "network": "Main Street Vehicles",
+            "public_transport": "stop_position"
+        }
+    },
+    "Town Square": {
+        "type": "node",
+        "id": 2932069973,
+        "lat": 48.8710741,
+        "lon": 2.7788412,
+        "tags": {
+            "name": "Town Square",
+            "network": "Horse-Drawn Streetcars",
+            "public_transport": "stop_position",
+            "railway": "tram_stop",
+            "tourism": "attraction",
+            "tram": "yes",
+            "website": "https://www.disneylandparis.fr/parcs-et-activites/attractions/parc-disneyland/horse-drawn-streetcars.html"
+        }
+    },
+    "Passage de la Gare": {
+        "type": "node",
+        "id": 1276877286,
+        "lat": 48.8549545,
+        "lon": 2.7758975,
+        "tags": {
+            "door": "yes",
+            "entrance": "yes",
+            "level": "0",
+            "name": "Passage de la Gare"
+        }
+    },
+    "ImagiNations": {
+        "type": "node",
+        "id": 11264952823,
+        "lat": 48.8688971,
+        "lon": 2.7773821,
+        "tags": {
+            "bus": "yes",
+            "name": "ImagiNations",
+            "network": "Disneyland Paris Transports",
+            "operator": "Disneyland Paris Transports",
+            "public_transport": "stop_position"
+        }
+    },
+    "Marne-la-Vallée - Chessy": {
+        "type": "node",
+        "id": 5849326553,
+        "lat": 48.8699116,
+        "lon": 2.7823543,
+        "tags": {
+            "level": "-1",
+            "local_ref": "2",
+            "location": "underground",
+            "name": "Marne-la-Vallée - Chessy",
+            "network": "Île-de-France Mobilités",
+            "operator": "RATP",
+            "public_transport": "stop_position",
+            "railway": "stop",
+            "ref:FR:uic8": "87754994",
+            "train": "yes",
+            "uic_ref": "8775499",
+            "wheelchair": "yes"
+        }
+    },
+    "Crédit Mutuel": {
+        "type": "node",
+        "id": 3980016765,
+        "lat": 48.8714236,
+        "lon": 2.7775743,
+        "tags": {
+            "amenity": "atm",
+            "brand": "Crédit Mutuel",
+            "brand:wikidata": "Q642627",
+            "name": "Crédit Mutuel",
+            "operator": "Crédit Mutuel",
+            "operator:wikidata": "Q642627",
+            "website": "https://www.disneylandparis.fr/services-visiteurs/dab-et-services-monetaires/"
+        }
+    },
+    "Hôtel New-York - The Art of Marvel": {
+        "type": "node",
+        "id": 2638265643,
+        "lat": 48.870755,
+        "lon": 2.787676,
+        "tags": {
+            "bus": "yes",
+            "name": "Hôtel New-York - The Art of Marvel",
+            "public_transport": "stop_position"
+        }
+    },
+    "Cascades de Cristal": {
+        "type": "node",
+        "id": 3007637451,
+        "lat": 48.8726194,
+        "lon": 2.773352,
+        "tags": {
+            "name": "Cascades de Cristal",
+            "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+            "waterway": "waterfall"
+        }
+    },
+    "Reception": {
+        "type": "node",
+        "id": 6202236371,
+        "lat": 48.8743812,
+        "lon": 2.7914978,
+        "tags": {
+            "entrance": "main",
+            "name": "Reception"
+        }
+    },
+    "Avenue Paul Séramy": {
+        "type": "node",
+        "id": 8778765015,
+        "lat": 48.8682886,
+        "lon": 2.7819491,
+        "tags": {
+            "level": "-1",
+            "name": "Avenue Paul Séramy",
+            "railway": "subway_entrance",
+            "ref": "3",
+            "wheelchair": "no"
+        }
+    },
+    "F.R.I.D.A.Y.": {
+        "type": "node",
+        "id": 9860326519,
+        "lat": 48.8653129,
+        "lon": 2.7795633,
+        "tags": {
+            "name": "F.R.I.D.A.Y.",
+            "tourism": "attraction"
+        }
+    },
+    "Hôtel Cheyenne": {
+        "type": "node",
+        "id": 10156777559,
+        "lat": 48.8740502,
+        "lon": 2.790605,
+        "tags": {
+            "bus": "yes",
+            "name": "Hôtel Cheyenne",
+            "public_transport": "stop_position"
+        }
+    },
+    "Hôtel Sequoia Lodge": {
+        "type": "node",
+        "id": 10156823541,
+        "lat": 48.8690332,
+        "lon": 2.7913184,
+        "tags": {
+            "bus": "yes",
+            "name": "Hôtel Sequoia Lodge",
+            "public_transport": "stop_position"
+        }
+    },
+    "Génie": {
+        "type": "node",
+        "id": 10221185860,
+        "lat": 48.8663025,
+        "lon": 2.7690002,
+        "tags": {
+            "bus": "yes",
+            "name": "Génie",
+            "network": "Disneyland Paris",
+            "public_transport": "stop_position"
+        }
+    },
+    "Grand Fossé": {
+        "type": "node",
+        "id": 10221995847,
+        "lat": 48.8662424,
+        "lon": 2.7670052,
+        "tags": {
+            "bus": "yes",
+            "name": "Grand Fossé",
+            "public_transport": "stop_position"
+        }
+    },
+    "Hercules/101 Dalmatiens": {
+        "type": "node",
+        "id": 10221995904,
+        "lat": 48.8677171,
+        "lon": 2.7684955,
+        "tags": {
+            "bus": "yes",
+            "name": "Hercules/101 Dalmatiens",
+            "public_transport": "stop_position"
+        }
+    },
+    "Avengers Campus": {
+        "type": "node",
+        "id": 10246213472,
+        "lat": 48.8664172,
+        "lon": 2.7796849,
+        "tags": {
+            "board_type": "notice",
+            "information": "board",
+            "name": "Avengers Campus",
+            "name:fr": "Campus des Avengers",
+            "tourism": "information",
+            "wikidata": "Q54954056",
+            "wikipedia": "fr:Avengers Campus"
+        }
+    },
+    "Aladdin": {
+        "type": "node",
+        "id": 10257650839,
+        "lat": 48.8694599,
+        "lon": 2.7684129,
+        "tags": {
+            "bus": "yes",
+            "name": "Aladdin",
+            "public_transport": "stop_position"
+        }
+    },
+    "Robin Hood": {
+        "type": "node",
+        "id": 10257650840,
+        "lat": 48.869949,
+        "lon": 2.7684192,
+        "tags": {
+            "bus": "yes",
+            "name": "Robin Hood",
+            "public_transport": "stop_position"
+        }
+    },
+    "Merlin/Elliot": {
+        "type": "node",
+        "id": 10262687813,
+        "lat": 48.8679583,
+        "lon": 2.7701163,
+        "tags": {
+            "bus": "yes",
+            "name": "Merlin/Elliot",
+            "public_transport": "stop_position"
+        }
+    },
+    "Baloo": {
+        "type": "node",
+        "id": 10735564255,
+        "lat": 48.8653666,
+        "lon": 2.7684872,
+        "tags": {
+            "bus": "yes",
+            "name": "Baloo",
+            "public_transport": "stop_position"
+        }
+    },
+    "Hôtel Newport Bay Club": {
+        "type": "node",
+        "id": 10735586004,
+        "lat": 48.8649957,
+        "lon": 2.7886227,
+        "tags": {
+            "bus": "yes",
+            "name": "Hôtel Newport Bay Club",
+            "public_transport": "stop_position"
+        }
+    },
+    "Simba": {
+        "type": "node",
+        "id": 10735607070,
+        "lat": 48.8759639,
+        "lon": 2.7760192,
+        "tags": {
+            "bus": "yes",
+            "name": "Simba",
+            "public_transport": "stop_position"
+        }
+    },
+    "Main Street East": {
+        "type": "node",
+        "id": 10735624909,
+        "lat": 48.8720261,
+        "lon": 2.7796375,
+        "tags": {
+            "bus": "yes",
+            "name": "Main Street East",
+            "public_transport": "stop_position"
+        }
+    },
+    "Euro Disney Associés S.A.S": {
+        "type": "node",
+        "id": 11205535034,
+        "lat": 48.8663539,
+        "lon": 2.7659387,
+        "tags": {
+            "addr:housenumber": "1",
+            "addr:street": "Rond Point d'Isigny",
+            "name": "Euro Disney Associés S.A.S"
+        }
+    },
+    "Shanghai Disney Resort": {
+        "type": "node",
+        "id": 11236752358,
+        "lat": 48.8687206,
+        "lon": 2.7819795,
+        "tags": {
+            "historic": "memorial",
+            "memorial": "plaque",
+            "name": "Shanghai Disney Resort"
+        }
+    },
+    "Disneyland Resort": {
+        "type": "node",
+        "id": 11236875779,
+        "lat": 48.8687902,
+        "lon": 2.7817046,
+        "tags": {
+            "historic": "memorial",
+            "memorial": "plaque",
+            "name": "Disneyland Resort"
+        }
+    },
+    "Hong Kong Disneyland": {
+        "type": "node",
+        "id": 11236875780,
+        "lat": 48.8686894,
+        "lon": 2.7819709,
+        "tags": {
+            "historic": "memorial",
+            "memorial": "plaque",
+            "name": "Hong Kong Disneyland"
+        }
+    },
+    "Walt Disney World": {
+        "type": "node",
+        "id": 11236875781,
+        "lat": 48.8687649,
+        "lon": 2.7816801,
+        "tags": {
+            "historic": "memorial",
+            "memorial": "plaque",
+            "name": "Walt Disney World"
+        }
+    },
+    "Tokyo Disney Resort": {
+        "type": "node",
+        "id": 11241169009,
+        "lat": 48.8687573,
+        "lon": 2.7819705,
+        "tags": {
+            "historic": "memorial",
+            "memorial": "plaque",
+            "name": "Tokyo Disney Resort"
+        }
+    },
+    "Cast-Member Only": {
+        "type": "node",
+        "id": 11244421650,
+        "lat": 48.8683371,
+        "lon": 2.782378,
+        "tags": {
+            "entrance": "yes",
+            "name": "Cast-Member Only",
+            "name:fr": "Cast-Member Uniquement"
+        }
+    },
+    "Disney Premier Access": {
+        "type": "node",
+        "id": 11366936830,
+        "lat": 48.8713322,
+        "lon": 2.7740078,
+        "tags": {
+            "entrance": "yes",
+            "name": "Disney Premier Access"
+        }
+    },
+    "Avengers Assemble: Flight Force": {
+        "type": "node",
+        "id": 11533610399,
+        "lat": 48.8653566,
+        "lon": 2.7794745,
+        "tags": {
+            "board_type": "notice",
+            "information": "board",
+            "name": "Avengers Assemble: Flight Force",
+            "tourism": "information",
+            "wikidata": "Q111708685",
+            "wikipedia": "fr:Avengers Assemble: Flight Force"
+        }
+    },
+    "Parc Disneyland": {
+        "type": "node",
+        "id": 11807676533,
+        "lat": 48.8698648,
+        "lon": 2.7819137,
+        "tags": {
+            "level": "0",
+            "name": "Parc Disneyland",
+            "railway": "subway_entrance",
+            "ref": "1",
+            "wheelchair": "no"
+        }
+    },
+    "Disney Village": {
+        "type": "node",
+        "id": 11807676534,
+        "lat": 48.8698051,
+        "lon": 2.7827227,
+        "tags": {
+            "entrance": "main",
+            "level": "0",
+            "name": "Disney Village",
+            "railway": "train_station_entrance",
+            "ref": "2",
+            "wheelchair": "yes"
+        }
+    },
+    "Parking Nord": {
+        "type": "node",
+        "id": 11987877673,
+        "lat": 48.8758996,
+        "lon": 2.7808023,
+        "tags": {
+            "bus": "yes",
+            "name": "Parking Nord",
+            "public_transport": "stop_position"
+        }
+    }
+}

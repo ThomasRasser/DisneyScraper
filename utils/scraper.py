@@ -5,6 +5,7 @@ from functools import lru_cache
 from pathlib import Path
 from threading import Lock
 
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -13,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 
-from cache_decorator import file_cache_wrapper_url_fetch
+from utils.cache_decorator import file_cache_wrapper_url_fetch
 
 
 class BrowserPool:
@@ -130,15 +131,11 @@ def get_html_multiple(
 ) -> dict:
     """
     Fetch HTML from multiple URLs concurrently using the browser pool
-
-    Args:
-        urls: List of URLs to fetch
-        wait_selector: CSS selector to wait for
-        timeout: Maximum time to wait for the selector
-        max_workers: Maximum number of concurrent workers
-
-    Returns:
-        Dictionary mapping URLs to their HTML content
+    :params urls: List of URLs to fetch
+    :params wait_selector: CSS selector to wait for
+    :params timeout: Maximum time to wait for the selector
+    :params max_workers: Maximum number of concurrent workers
+    :returns: Dictionary mapping URLs to their HTML content
     """
     results = {}
 
@@ -161,3 +158,19 @@ def get_html_multiple(
                 results[url] = None
 
     return results
+
+
+def extract_human_text_from_html(html: str, selector: str = "main") -> str:
+    """
+    Extract human-readable text from HTML using a given selector.
+    Defaults to extracting from the <main> tag.
+    """
+    if not html:
+        return ""
+
+    soup = BeautifulSoup(html, "html.parser")
+    main_element = soup.select_one(selector)
+    if not main_element:
+        return soup.get_text(separator="\n", strip=True)
+
+    return main_element.get_text(separator="\n", strip=True)
